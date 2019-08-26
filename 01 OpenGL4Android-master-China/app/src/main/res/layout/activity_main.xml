@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/ff_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/go_camera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Filter - video"
+            android:onClick="onClick"/>
+
+        <Button
+            android:id="@+id/go_mp4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Filter - local"
+            android:onClick="onClick"/>
+
+        <Button
+            android:id="@+id/go_pic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Beautify - local"
+            android:onClick="onClick"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

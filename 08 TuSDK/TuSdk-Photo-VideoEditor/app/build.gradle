@@ -1,0 +1,52 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.1"
+    defaultConfig {
+        applicationId "org.lasque.tusdkvideodemo"
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "3.4.1"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            //Zipalign优化
+            zipAlignEnabled true
+            // 移除无用的resource文件
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions{
+        checkReleaseBuilds false
+        abortOnError false
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    compile files('libs/bugly_crash_release_2.6.5.jar')
+
+    compile ('com.github.bumptech.glide:glide:4.7.1') {
+        exclude group: 'com.android.support'
+    }
+
+    compile('com.github.jakob-grabner:Circle-Progress-View:v1.3', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+	compile 'com.makeramen:roundedimageview:2.3.0'
+
+    //multidex支持依赖
+    compile 'com.android.support:multidex:1.0.3'
+
+}

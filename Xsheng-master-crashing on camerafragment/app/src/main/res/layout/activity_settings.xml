@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_settings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F1F0F6"
+    tools:context="zippler.cn.xs.activity.SettingsActivity">
+
+    <RelativeLayout
+        android:background="#fff"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:adjustViewBounds="false"
+            android:cropToPadding="false"
+            android:src="@mipmap/back"
+            android:contentDescription="@string/app_english"
+            />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Setting"
+            android:textColor="@android:color/background_dark"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:src="@mipmap/back_black"
+            android:contentDescription="@string/app_english"/>
+    </RelativeLayout>
+    <View
+        android:background="#F1F0F6"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        />
+    <RelativeLayout
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Account and security"
+            android:textColor="#000"
+            android:textSize="@dimen/setting_ui_key_font_size" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            app:srcCompat="@mipmap/right"
+            android:contentDescription="@string/app_english"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="@dimen/activity_horizontal_margin"
+        android:layout_height="1dp"
+        android:background="#fff"/>
+    <RelativeLayout
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New message push"
+            android:textColor="#000"
+            android:textSize="@dimen/setting_ui_key_font_size" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginEnd="30dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            app:srcCompat="@drawable/circle_button" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            app:srcCompat="@mipmap/right" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="@dimen/activity_horizontal_margin"
+        android:layout_height="1dp"
+        android:background="#fff"/>
+    <RelativeLayout
+        android:id="@+id/clear_cache"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Empty the cache"
+            android:textColor="#000"
+            android:textSize="@dimen/setting_ui_key_font_size" />
+
+        <TextView
+            android:id="@+id/cache_size"
+            android:text="17.0MB"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <View
+        android:background="#F1F0F6"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        />
+    <RelativeLayout
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Feedback"
+            android:textColor="#000"
+            android:textSize="@dimen/setting_ui_key_font_size" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@mipmap/right" />
+    </RelativeLayout>
+    <View
+        android:background="#F1F0F6"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        />
+    <RelativeLayout
+        android:id="@+id/about_layout"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/about"
+            android:textColor="#000"
+            android:textSize="@dimen/setting_ui_key_font_size" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginEnd="30dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            app:srcCompat="@drawable/circle_button"
+            android:contentDescription="@string/app_english"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@mipmap/right" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#F1F0F6"/>
+    <RelativeLayout
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/logout"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="@dimen/setting_ui_key_font_size" />
+    </RelativeLayout>
+</LinearLayout>

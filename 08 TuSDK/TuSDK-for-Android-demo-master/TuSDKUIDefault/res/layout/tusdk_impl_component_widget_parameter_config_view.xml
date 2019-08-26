@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.lasque.tusdk.impl.components.widget.filter.ParameterConfigView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lsq_background_option_bar"
+    android:orientation="vertical" >
+
+    <org.lasque.tusdk.core.view.TuSdkLinearLayout
+        android:id="@+id/lsq_params_view"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:text="@string/lsq_text"
+            android:textColor="@color/lsq_color_white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:text="@string/lsq_text"
+            android:textColor="@color/lsq_seekbar_drag_color"
+            android:textSize="14sp" />
+    </org.lasque.tusdk.core.view.TuSdkLinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="8dp"
+        android:paddingRight="5dp" >
+
+        <org.lasque.tusdk.core.view.widget.button.TuSdkTextButton
+            android:id="@+id/lsq_rest_button"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:minWidth="44dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:text="@string/lsq_reset"
+            android:textColor="@color/lsq_color_white"
+            android:textSize="12sp"
+            android:background="@drawable/tusdk_button_filter_reset_background" />
+
+        <include
+            android:id="@+id/lsq_seek_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="16dp"
+            android:layout_toLeftOf="@+id/lsq_number_view"
+            android:layout_toRightOf="@+id/lsq_rest_button"
+            layout="@layout/tusdk_view_widget_seekbar" />
+
+        <TextView
+            android:id="@+id/lsq_number_view"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:text="@string/lsq_text"
+            android:textColor="@color/lsq_color_white"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+</org.lasque.tusdk.impl.components.widget.filter.ParameterConfigView>

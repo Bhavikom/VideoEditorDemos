@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: jaretutil-0.32">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/timebars/jaretutil-0.32.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    xmlns:progress="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp"
+        android:gravity="center_vertical"
+        android:background="#ffffff">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:background="#ffffff">
+
+            <ImageView
+                android:id="@+id/music_avatar"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:layout_weight="1"
+                android:src="@mipmap/music_poster"
+                android:contentDescription="@string/app_english" />
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/music_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:typeface="monospace"
+                        android:textSize="16sp"
+                        android:textColor="#000000"
+                        android:text="@string/app_english"/>
+
+
+                    <TextView
+                        android:id="@+id/music_author"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/default_author"
+                        android:textSize="12sp"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:textColor="@color/red_tags"
+                        tools:ignore="RtlSymmetry"
+                        android:background="@drawable/hollow_round_border"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/music_length"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/little_grey_round_border"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="12sp"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:text="@string/default_length"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+                <ImageView
+                    android:id="@+id/music_play"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/play"
+                    android:contentDescription="@string/app_english"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <zippler.cn.xs.component.LinearProgressBar
+            android:id="@+id/music_progress"
+            android:layout_width="328dp"
+            android:layout_height="wrap_content"
+            progress:color_r="#333333"
+            progress:color="#ff0000ff"
+            android:layout_marginTop="2dp"
+            android:max="100"/>
+    </LinearLayout>
+
+</LinearLayout>

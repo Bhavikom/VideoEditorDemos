@@ -1,0 +1,139 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="zippler.cn.xs.fragment.CameraFragment"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:gravity="center_horizontal">
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:layout_scrollFlags="scroll|enterAlways">
+
+                <LinearLayout
+                    android:id="@+id/upload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:padding="4dp"
+                    tools:ignore="UseCompoundDrawables">
+                    <TextView
+                        android:id="@+id/upload_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/upload"
+                        android:layout_gravity="center"
+                        android:textSize="14sp"
+                        android:textColor="#2c2c2c"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:src="@mipmap/upload"
+                        android:contentDescription="@string/app_english" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_height="match_parent"
+                    android:textSize="18sp"
+                    android:textColor="#000000"
+                    android:text="@string/choose_music"
+                    android:gravity="center_vertical"/>
+
+                <LinearLayout
+                    android:id="@+id/record"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:padding="4dp"
+                    tools:ignore="RelativeOverlap">
+
+                    <TextView
+                        android:id="@+id/next_step"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:textColor="@color/colorWhite"
+                        android:background="@drawable/pink_background"
+                        android:layout_marginEnd="10dp"
+                        android:text="@string/auto_bgm"
+                        tools:ignore="RelativeOverlap" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/search"
+                android:layout_width="330dp"
+                android:layout_height="32dp"
+                android:background="@drawable/grey_round_border">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    >
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@mipmap/search"
+                        android:contentDescription="@string/app_english" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:text="@string/search_favorite_music"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp">
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="20dp"
+                    android:background="#FF3333"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/hot_composer"/>
+            </LinearLayout>
+
+
+            <!-- Fill the remaining space -->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/synthetic_music"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

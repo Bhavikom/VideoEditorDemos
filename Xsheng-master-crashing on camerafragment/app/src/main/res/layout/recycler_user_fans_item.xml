@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="75dp">
+
+    <zippler.cn.xs.component.CircleImageView
+        android:id="@+id/avatar_circle_image_view"
+        android:layout_width="80dp"
+        android:layout_height="match_parent" />
+    <LinearLayout
+        android:id="@+id/user_info_layout"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/username_text_view"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="30dp"
+            android:textColor="#eeeeee"
+            android:textSize="22sp"
+            android:gravity="center_vertical|left"
+            android:text="test"
+            android:singleLine="true"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            />
+
+        <TextView
+            android:id="@+id/desc_text_view"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|left"
+            android:layout_height="30dp"
+            android:textColor="#aaa"
+            android:textSize="14sp"
+            android:text="test"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

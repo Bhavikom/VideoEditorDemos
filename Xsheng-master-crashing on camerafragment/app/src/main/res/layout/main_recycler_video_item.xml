@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/video_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true">
+
+    <zippler.cn.xs.component.FullVideoView
+        android:id="@+id/video_show"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+   <ImageView
+       android:id="@+id/poster"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:adjustViewBounds="true"
+       android:scaleType="fitXY"
+       android:contentDescription="@string/app_english"
+       android:visibility="visible"/>
+
+
+    <LinearLayout
+        android:id="@+id/extra"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:paddingStart="8dp"
+           android:gravity="center_vertical">
+           <TextView
+               android:id="@+id/video_name"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="I still like you, like the wind gone eight thousand miles."
+               android:maxLines="2"
+               android:ellipsize="end"
+               android:typeface="serif"
+               android:textSize="20sp"
+               android:padding="6dp"
+               android:textColor="#e8e8e8"/>
+          <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+              <TextView
+                  android:id="@+id/video_time"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="May 5, 2018 20:16:41"
+                  android:textSize="12sp"
+                  android:paddingStart="10dp"
+                  android:textColor="#e8e8e8"
+                  tools:ignore="RtlSymmetry" />
+
+              <TextView
+                  android:id="@+id/length"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/default_length"
+                  android:paddingStart="5dp"
+                  android:paddingEnd="5dp"
+                  android:textSize="12sp"
+                  android:textColor="#e8e8e8"
+                  android:layout_marginStart="10dp"
+                  android:background="@drawable/round_border"
+                  />
+
+              <TextView
+                  android:id="@+id/author"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="@string/default_author"
+                  android:textSize="12sp"
+                  android:paddingStart="5dp"
+                  android:paddingEnd="5dp"
+                  android:textColor="@color/red_tags"
+                  tools:ignore="RtlSymmetry"
+                  android:layout_marginStart="10dp"
+                  android:background="@drawable/hollow_round_border"/>
+          </LinearLayout>
+       </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <zippler.cn.xs.component.CircleImageView
+                android:id="@+id/avatar"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:adjustViewBounds="true"
+                android:src="@mipmap/avatar"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"/>
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/loading_movie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/load_movie"
+            android:layout_marginTop="120dp"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/app_chinese"
+            android:visibility="invisible"/>
+        <ImageView
+            android:id="@+id/play"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/play"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/app_chinese" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="10dp">
+        <ImageView
+            android:id="@+id/love"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="18dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/love_white"
+            android:contentDescription="@string/default_length"/>
+
+        <ImageView
+            android:id="@+id/comment"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/quote"
+            android:contentDescription="@string/default_length"/>
+
+        <ImageView
+            android:id="@+id/redeploy"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="18dp"
+
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/redeploy"
+            android:contentDescription="@string/default_length"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

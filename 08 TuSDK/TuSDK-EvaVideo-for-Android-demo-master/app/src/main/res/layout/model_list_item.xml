@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="12dp"
+    android:layout_marginLeft="12dp"
+    android:layout_marginBottom="18dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:scaleType="fitCenter"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/lsq_model_icon"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:text="111111111111111"
+        android:textColor="@color/lsq_color_white"
+        android:lineHeight="6dp"
+        android:textSize="12sp"
+        android:layout_marginTop="11dp"
+        app:layout_constraintLeft_toLeftOf="@id/lsq_model_icon"
+        app:layout_constraintTop_toBottomOf="@id/lsq_model_icon"
+        android:id="@+id/lsq_model_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</android.support.constraint.ConstraintLayout>

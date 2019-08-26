@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+    android:layout_margin="3dp"
+    android:background="@drawable/item_editor_bg">
+
+    <ImageView
+        android:id="@+id/lsq_editor_icon"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:text="1"
+        android:lineHeight="15dp"
+        android:textSize="10sp"
+        android:gravity="center"
+        android:background="@drawable/item_editor_image_num_bg"
+        android:textColor="@color/lsq_color_white"
+        app:layout_constraintTop_toTopOf="@id/lsq_editor_icon"
+        app:layout_constraintRight_toRightOf="@id/lsq_editor_icon"
+        android:id="@+id/lsq_editor_icon_num"
+        android:layout_width="wrap_content"
+        android:minWidth="20dp"
+        android:layout_height="16dp" />
+
+</android.support.constraint.ConstraintLayout>

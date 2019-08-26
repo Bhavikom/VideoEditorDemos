@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/lsq_root_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/lsq_splash_bg"
+        android:scaleType="centerCrop"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/lsq__space_140"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal">
+        <TextView
+            android:id="@+id/lsq_app_name"
+            android:textColor="@color/lsq_color_white"
+            android:textSize="@dimen/lsq_font_size_70"
+            android:text="@string/lsq_text_home_title_tusdk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/lsq_font_size_70"
+            android:textStyle="normal"
+            android:fontFamily="sans-serif-thin"
+            android:text="@string/lsq_text_home_title_video"/>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/lsq_app_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/lsq_icon_home_list"
+        android:background="@color/lsq_alpha_black_99"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/lsq__space_20"
+        android:layout_marginRight="@dimen/lsq__space_20"/>
+
+    <LinearLayout
+        android:id="@+id/lsq_blur_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lsq_bottom_height"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_alignParentBottom="true">
+
+        <RadioButton
+            android:id="@+id/lsq_app_record"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/lsq__space_10"
+            android:paddingBottom="@dimen/lsq__space_10"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/lsq_icon_home_record"
+            android:gravity="center"
+            android:text="@string/lsq_text_home_record"
+            android:textColor="@color/lsq_color_white"
+            android:textSize="@dimen/lsq_font_size_26" />
+        <RadioButton
+            android:id="@+id/lsq_app_clip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/lsq__space_10"
+            android:paddingBottom="@dimen/lsq__space_10"
+            android:textColor="@color/lsq_color_white"
+            android:textSize="@dimen/lsq_font_size_26"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:drawableTop="@drawable/lsq_icon_home_clip"
+            android:text="@string/lsq_text_home_edit"
+            android:button="@null"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

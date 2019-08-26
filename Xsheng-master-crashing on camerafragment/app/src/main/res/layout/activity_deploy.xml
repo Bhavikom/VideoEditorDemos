@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_deploy_video"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212121"
+    tools:context="zippler.cn.xs.activity.DeployActivity"
+    android:theme="@style/ShareElementAppTheme">
+
+    <!--<zippler.cn.yuewu.component.MyGifView-->
+        <!--android:id="@+id/loading"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:translationZ="10dp"-->
+        <!--android:contentDescription="@string/app_name" />-->
+
+    <!--发布视频-->
+    <RelativeLayout
+        android:id="@+id/deploy_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#212121"
+        >
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="#00000000"
+            android:src="@mipmap/back"
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="release"
+            android:textColor="#eeeeee"
+            android:textSize="20sp"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/edit_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#333333"
+        android:padding="10dp"
+        android:layout_below="@id/deploy_top_layout"
+        >
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:inputType="textMultiLine"
+            android:gravity="top"
+            android:textColor="#aaaaaa"
+            android:textSize="18sp"
+            android:textCursorDrawable="@null"
+            android:background="@null"
+            android:hint="Let me talk about the new things you have encountered..."
+            android:textColorHint="#eee"
+            android:ems="10"
+            android:id="@+id/video_desc_text" />
+
+        <ImageView
+            android:id="@+id/preview_video_img"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:transitionName="videoImg"
+            android:contentDescription="@string/app_name" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/address_layout"
+        android:orientation="horizontal"
+        android:background="#333333"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/edit_layout">
+       <ImageView
+           android:layout_width="25dp"
+           android:layout_height="25dp"
+           android:contentDescription="@string/app_name"
+           android:scaleType="fitXY"
+           android:adjustViewBounds="true"
+           android:layout_centerVertical="true"
+           android:layout_marginStart="10dp"
+           android:src="@mipmap/location1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Where are you?"
+            android:textColor="#eee"
+            android:layout_centerVertical="true"
+            android:textSize="18sp"
+            android:layout_marginStart="60dp"
+            />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:src="@mipmap/right"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/category_layout"
+        android:orientation="horizontal"
+        android:background="#333333"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/address_layout">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:src="@mipmap/category"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="add category"
+            android:textColor="#eee"
+            android:layout_centerVertical="true"
+            android:textSize="18sp"
+            android:layout_marginStart="60dp"
+            />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:src="@mipmap/right"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/deploy_btn"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:text="release"
+        android:textSize="20sp"
+        android:textColor="#eeeeee"
+        android:background="@color/colorRed"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/category_layout"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

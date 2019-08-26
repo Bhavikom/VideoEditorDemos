@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="E:\Bhavik\AndroidProjects\01 DEMO\14 VIdeoEditor\FFmpeg-Video-Editor-Android-master\app\build\intermediates\exploded-aar\com.android.support\design\25.2.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ea6a989b83d19b1b461281e0475a6cd6514897f8">
+        <dex dex="E:\Bhavik\AndroidProjects\01 DEMO\14 VIdeoEditor\FFmpeg-Video-Editor-Android-master\app\build\intermediates\pre-dexed\debug\com.android.support-design-25.2.0_5ed0c08e80682185750bfcb4b9470d1115b8dfe5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Bhavik\AndroidProjects\01 DEMO\14 VIdeoEditor\FFmpeg-Video-Editor-Android-master\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.2.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
+        <dex dex="E:\Bhavik\AndroidProjects\01 DEMO\14 VIdeoEditor\FFmpeg-Video-Editor-Android-master\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-25.2.0_f09c824108667e1441dc8f7c906d5ae59972981b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Bhavik\AndroidProjects\01 DEMO\14 VIdeoEditor\FFmpeg-Video-Editor-Android-master\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\25.2.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="30a4938ea5235ccf532b3e9f04200e68547e36ad">
+        <dex dex="E:\Bhavik\AndroidProjects\01 DEMO\14 VIdeoEditor\FFmpeg-Video-Editor-Android-master\app\build\intermediates\pre-dexed\debug\com.android.support-cardview-v7-25.2.0_4ee39e2e735ec5caa119ba26d80f67f25b1bfee1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Bhavik\SOFTWARE\SDK\extras\android\m2repository\com\android\support\support-annotations\25.2.0\support-annotations-25.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4a5a82a027706397fff621b22fd6fa796e91d7c5">
+        <dex dex="E:\Bhavik\AndroidProjects\01 DEMO\14 VIdeoEditor\FFmpeg-Video-Editor-Android-master\app\build\intermediates\pre-dexed\debug\support-annotations-25.2.0_51a5f5e0fa100fc78c2387c50942459d323d82c1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Bhavik\AndroidProjects\01 DEMO\14 VIdeoEditor\FFmpeg-Video-Editor-Android-master\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.2.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="152de8da301561dcb0946471697a420d8f7a68c5">
+        <dex dex="E:\Bhavik\AndroidProjects\01 DEMO\14 VIdeoEditor\FFmpeg-Video-Editor-Android-master\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-25.2.0_952638ae814fbeee822a17d25e807ed5702bceab.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Bhavik\AndroidProjects\01 DEMO\14 VIdeoEditor\FFmpeg-Video-Editor-Android-master\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.2.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="67eb33110dbacb46a48175b08ae0c96761d2c17d">
+        <dex dex="E:\Bhavik\AndroidProjects\01 DEMO\14 VIdeoEditor\FFmpeg-Video-Editor-Android-master\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-25.2.0_4832f0b1c3cf01deffa59f54742024c229ba62d4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Bhavik\AndroidProjects\01 DEMO\14 VIdeoEditor\FFmpeg-Video-Editor-Android-master\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.2.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fa0446a14ed5dd3725047d6399ffea771a564b30">
+        <dex dex="E:\Bhavik\AndroidProjects\01 DEMO\14 VIdeoEditor\FFmpeg-Video-Editor-Android-master\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-25.2.0_af65302d74af5c2996b076da0090a372323ad271.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Bhavik\AndroidProjects\01 DEMO\14 VIdeoEditor\FFmpeg-Video-Editor-Android-master\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.2.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="702d339bc0a81d21354cd7e2cf2b67225fa4a16c">
+        <dex dex="E:\Bhavik\AndroidProjects\01 DEMO\14 VIdeoEditor\FFmpeg-Video-Editor-Android-master\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-25.2.0_995449f3c4875ef4ae6a7461c1d51e1b7d19293f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Bhavik\AndroidProjects\01 DEMO\14 VIdeoEditor\FFmpeg-Video-Editor-Android-master\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.2.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ee394a892dd21c03a528139c1e8d4e0e1264ac84">
+        <dex dex="E:\Bhavik\AndroidProjects\01 DEMO\14 VIdeoEditor\FFmpeg-Video-Editor-Android-master\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-25.2.0_5a649312106b69f0b28ae454703349f88dbe5e1c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Bhavik\AndroidProjects\01 DEMO\14 VIdeoEditor\FFmpeg-Video-Editor-Android-master\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.2.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e820b7be8c035dd522da4bc822e8a76c8e27921a">
+        <dex dex="E:\Bhavik\AndroidProjects\01 DEMO\14 VIdeoEditor\FFmpeg-Video-Editor-Android-master\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-25.2.0_09bfc47344712e92d1a182231e27d0ee019a6a1c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Bhavik\AndroidProjects\01 DEMO\14 VIdeoEditor\FFmpeg-Video-Editor-Android-master\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.2.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="810f41e5b7fd99f196ebeabe865ba2c54e7e76dc">
+        <dex dex="E:\Bhavik\AndroidProjects\01 DEMO\14 VIdeoEditor\FFmpeg-Video-Editor-Android-master\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-25.2.0_d574dc7f1976994e0d1a6a249dc9c5506fd96946.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Bhavik\AndroidProjects\01 DEMO\14 VIdeoEditor\FFmpeg-Video-Editor-Android-master\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.2.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cb454b52545859ed2f24a6c01366805b0fa04b22">
+        <dex dex="E:\Bhavik\AndroidProjects\01 DEMO\14 VIdeoEditor\FFmpeg-Video-Editor-Android-master\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-25.2.0_126f71982306df95224c6f103c9f6a31d93cbd4c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Bhavik\AndroidProjects\01 DEMO\14 VIdeoEditor\FFmpeg-Video-Editor-Android-master\app\build\intermediates\exploded-aar\com.writingminds\FFmpegAndroid\0.3.2\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="722acae466ccefebedf8a6631384e83bf3139f7c">
+        <dex dex="E:\Bhavik\AndroidProjects\01 DEMO\14 VIdeoEditor\FFmpeg-Video-Editor-Android-master\app\build\intermediates\pre-dexed\debug\com.writingminds-FFmpegAndroid-0.3.2_c2e7199f00111c492319581a7d785decf3bf64aa.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Bhavik\AndroidProjects\01 DEMO\14 VIdeoEditor\FFmpeg-Video-Editor-Android-master\app\build\intermediates\exploded-aar\com.android.support\transition\25.2.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e51c2f662bb72419632af5192553c37e33890a99">
+        <dex dex="E:\Bhavik\AndroidProjects\01 DEMO\14 VIdeoEditor\FFmpeg-Video-Editor-Android-master\app\build\intermediates\pre-dexed\debug\com.android.support-transition-25.2.0_158a40cd4e4abe3cb0c06caa31367312db3a4b0e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\OM\.gradle\caches\modules-2\files-2.1\commons-io\commons-io\2.5\2852e6e05fbb95076fc091f6d1780f1f8fe35e0f\commons-io-2.5.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2852e6e05fbb95076fc091f6d1780f1f8fe35e0f">
+        <dex dex="E:\Bhavik\AndroidProjects\01 DEMO\14 VIdeoEditor\FFmpeg-Video-Editor-Android-master\app\build\intermediates\pre-dexed\debug\commons-io-2.5_134459f29acfb89c09112ff4280aac5ccd6525fb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Bhavik\AndroidProjects\01 DEMO\14 VIdeoEditor\FFmpeg-Video-Editor-Android-master\app\build\intermediates\exploded-aar\org.florescu.android.rangeseekbar\rangeseekbar-library\0.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b8f19036e690aaf0676a0926db48e3ebaeb12fe4">
+        <dex dex="E:\Bhavik\AndroidProjects\01 DEMO\14 VIdeoEditor\FFmpeg-Video-Editor-Android-master\app\build\intermediates\pre-dexed\debug\org.florescu.android.rangeseekbar-rangeseekbar-library-0.3.0_e3cc4c1aa1bb098967bf3e70e73a46c39479e427.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Bhavik\AndroidProjects\01 DEMO\14 VIdeoEditor\FFmpeg-Video-Editor-Android-master\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.2.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="E:\Bhavik\AndroidProjects\01 DEMO\14 VIdeoEditor\FFmpeg-Video-Editor-Android-master\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-25.2.0_f3efdb56555c3b233aca03a884e56797ccef0cd1.jar" />
+    </item>
+
+</items>

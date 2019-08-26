@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: timebars-1.49">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/timebars/timebars-1.49.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

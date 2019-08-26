@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lsq_default_bg">
+
+    <include
+        android:id="@+id/lsq_title"
+        layout="@layout/title_item_layout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:textStyle="bold"
+        android:text="小清新婚礼派对电子请柬"
+        android:textSize="16sp"
+        android:textColor="@color/lsq_color_white"
+        android:layout_marginTop="374dp"
+        app:layout_constraintTop_toBottomOf="@id/lsq_title"
+        android:layout_marginLeft="21dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/lsq_model_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lsq_title"
+        android:id="@+id/lsq_model_seles"
+        app:layout_constraintBottom_toTopOf="@id/lsq_model_name"
+        android:layout_width="0dp"
+        android:layout_height="350dp">
+    </FrameLayout>
+
+    <ImageView
+        android:background="@null"
+        android:visibility="gone"
+        android:src="@mipmap/lsq_player_img"
+        app:layout_constraintBottom_toBottomOf="@id/lsq_model_seles"
+        app:layout_constraintRight_toRightOf="@id/lsq_model_seles"
+        app:layout_constraintLeft_toLeftOf="@id/lsq_model_seles"
+        app:layout_constraintTop_toTopOf="@id/lsq_model_seles"
+        android:id="@+id/lsq_player_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <SeekBar
+        android:paddingEnd="10dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:maxHeight="4dp"
+        app:layout_constraintRight_toRightOf="@id/lsq_model_seles"
+        app:layout_constraintLeft_toLeftOf="@id/lsq_model_seles"
+        app:layout_constraintTop_toBottomOf="@id/lsq_model_seles"
+        android:id="@+id/lsq_seek"
+        android:layout_width="0dp"
+        android:layout_height="14dp"
+        android:thumb="@drawable/lsq_model_seekbar_thumb"
+        android:progressDrawable="@drawable/lsq_model_seekbar_bg"
+        android:paddingStart="10dp" />
+
+
+    
+    <TextView
+        android:lineHeight="12dp"
+        android:textSize="14sp"
+        android:textColor="@color/lsq_color_white"
+        android:layout_marginTop="22dp"
+        app:layout_constraintLeft_toLeftOf="@id/lsq_model_name"
+        app:layout_constraintTop_toBottomOf="@id/lsq_model_name"
+        android:id="@+id/lsq_model_replace_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    
+    <TextView
+        android:background="@drawable/lsq_model_create_bg"
+        android:gravity="center"
+        android:text="一键制作"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/lsq_color_white"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/lsq_next_step"
+        android:layout_width="160dp"
+        android:layout_height="52dp"
+        android:drawableStart="@mipmap/lsq_model_create"
+        android:drawableLeft="@mipmap/lsq_model_create"
+        android:drawablePadding="-30dp"
+        android:paddingLeft="30dp"
+        android:paddingStart="30dp" />
+
+</android.support.constraint.ConstraintLayout>

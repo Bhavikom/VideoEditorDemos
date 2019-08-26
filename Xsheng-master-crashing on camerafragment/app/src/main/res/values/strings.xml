@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_chinese">phonetic</string>
+    <string name="app_name">phonetic</string>
+    <string name="app_english">phonetic</string>
+    <string name="team">Sirius</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_camera_fragment">Hello camera fragment</string>
+    <string name="hello_user_fragment">Hello user fragment</string>
+    <string name="hello_video_fragment">Hello video fragment</string>
+    <string name="video_default_name">default</string>
+    <string name="default_length">00:15</string>
+    <string name="default_author">Smart soundtrack</string>
+    <string name="upload">Upload</string>
+    <string name="choose_music">Choose music</string>
+    <string name="auto_bgm">Direct shooting</string>
+    <string name="search_favorite_music">Search for your favorite music</string>
+    <string name="hot_composer">Music audition</string>
+    <string name="auto_make">Intelligent generation</string>
+    <string name="next_step">Next step</string>
+
+    <string name="settings">Setting</string>
+    <string name="author">Zipple</string>
+    <string name="more">More</string>
+    <string name="about">on</string>
+    <string name="logout">sign out</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

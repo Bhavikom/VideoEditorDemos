@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.lasque.tusdk.impl.components.camera.TuCameraFilterView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <org.lasque.tusdk.core.view.TuSdkLinearLayout
+        android:id="@+id/lsq_group_bottom_view"
+        android:layout_width="match_parent"
+        android:layout_height="166dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/lsq_background_camera_filter_view_bar_alpha" 
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/lsq_group_filter_bar"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/lsq_background_camera_filter_view_bar_alpha" 
+            layout="@layout/tusdk_impl_component_widget_group_filter_bar" />
+        
+    </org.lasque.tusdk.core.view.TuSdkLinearLayout>
+
+    <include
+        android:id="@+id/lsq_filter_title_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        layout="@layout/tusdk_impl_component_widget_filter_title_view" />
+
+</org.lasque.tusdk.impl.components.camera.TuCameraFilterView>

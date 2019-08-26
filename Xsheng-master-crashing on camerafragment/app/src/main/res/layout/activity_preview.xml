@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="zippler.cn.xs.activity.PreviewActivity">
+
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+
+      <zippler.cn.xs.component.FullVideoView
+          android:id="@+id/video"
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1" />
+
+<!--      <android.support.v7.widget.RecyclerView
+          android:id="@+id/thumbnails"
+          android:layout_width="match_parent"
+          android:layout_height="60dp"
+          android:background="#80000000"
+          >
+
+      </android.support.v7.widget.RecyclerView>-->
+   </LinearLayout>
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="40dp">
+      <ImageView
+          android:id="@+id/delete_btn"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerVertical="true"
+          android:src="@mipmap/delete"
+          android:layout_marginStart="10dp"
+          android:contentDescription="@string/app_english" />
+
+
+
+      <TextView
+          android:id="@+id/next_step_after_preview"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerVertical="true"
+          android:layout_alignParentEnd="true"
+          android:padding="5dp"
+          android:textColor="@color/colorWhite"
+          android:background="@drawable/pink_background"
+          android:layout_marginEnd="10dp"
+          android:text="Generating a soundtrack"
+          tools:ignore="RelativeOverlap" />
+   </RelativeLayout>
+
+ <!--  <SeekBar
+       android:id="@+id/sb_clip"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="50dp"
+       style="@style/CustomSeekbarStyle"
+       android:progress="20"
+       android:max="100"
+       />-->
+
+   <zippler.cn.xs.component.DoubleSeekBar
+       android:id="@+id/dsb"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="50dp"/>
+
+   <ImageView
+       android:id="@+id/play_btn"
+       android:visibility="gone"
+       android:layout_width="40dp"
+       android:layout_height="40dp"
+       android:layout_centerInParent="true"
+       android:src="@mipmap/play"
+       android:contentDescription="@string/app_english"/>
+
+
+
+
+   <ImageView
+       android:id="@+id/loading"
+       android:layout_width="60dp"
+       android:layout_height="60dp"
+       android:adjustViewBounds="true"
+       android:scaleType="fitXY"
+       android:layout_centerInParent="true"
+       android:contentDescription="@string/app_english"
+       android:src="@mipmap/loading"
+       android:visibility="invisible"/>
+
+   <TextView
+       android:id="@+id/clip_btn"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+       android:layout_alignParentEnd="true"
+       android:layout_margin="20dp"
+       android:textColor="#ffffff"
+       android:textSize="18sp"
+       android:text="Crop"
+       android:drawableLeft="@mipmap/clip"/>
+</RelativeLayout>

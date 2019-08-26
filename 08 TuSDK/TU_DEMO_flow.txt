@@ -1,0 +1,23 @@
+SplashActivity
+
+DemoEntryActivity - select edit option
+
+MediaAlbumActivity 
+	
+	MovieAlbumFragment
+
+MovieEditorPreviewActivity
+
+
+MovieEditorCutActivity - startCompound (nade che)
+
+
+MovieEditorActivity = this is the major activity which contain all major operation of editiong video
+
+
+android.support.v7.widget.RecyclerView
+
+androidx.recyclerview.widget.RecyclerView
+business_meicam@cdv.com
+
+com.meishe.sdkdemo.edit.view.CustomTitleBar

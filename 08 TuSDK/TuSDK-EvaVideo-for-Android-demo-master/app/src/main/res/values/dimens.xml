@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="lsq_font_size_24">12sp</dimen>
+    <dimen name="lsq_font_size_34">17sp</dimen>
+    <dimen name="lsq_font_size_36">18sp</dimen>
+    <dimen name="lsq_font_size_70">35sp</dimen>
+
+    <!-- radius -->
+    <!-- actionsheet -->
+
+    <dimen name="lsq_title_height">50dp</dimen>
+
+    <dimen name="lsq__space_100">100dp</dimen>
+    <dimen name="lsq__space_25">25dp</dimen>
+    <dimen name="lsq__space_20">20dp</dimen>
+    <dimen name="lsq__space_10">10dp</dimen>
+    <dimen name="lsq__space_5">5dp</dimen>
+
+    <dimen name="lsq_font_space_15">15dp</dimen>
+
+</resources>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="zippler.cn.xs.activity.PreviewMusicActivity">
+
+
+
+    <zippler.cn.xs.component.FullVideoView
+        android:id="@+id/video_m"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+
+    <ImageView
+        android:id="@+id/play_btn_m"
+        android:visibility="gone"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/play"
+        android:contentDescription="@string/app_english"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/musics"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout
+        android:id="@+id/guide_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#80000000">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="18dp"
+            android:contentDescription="@string/app_english"
+            android:src="@mipmap/arrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Swipe left and right to switch background music"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="18dp"
+            android:contentDescription="@string/app_english"
+            android:rotation="180"
+            android:src="@mipmap/arrow" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <ImageView
+            android:id="@+id/back_preview_m"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/back"
+            android:layout_marginStart="10dp"
+            android:contentDescription="@string/app_english" />
+
+
+
+        <TextView
+            android:id="@+id/next_step_after_preview_m"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:padding="5dp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/pink_background"
+            android:layout_marginEnd="10dp"
+            android:text="@string/next_step"
+            tools:ignore="RelativeOverlap" />
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/c_loading_logo"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/loading"
+        android:visibility="invisible"
+        android:contentDescription="@string/app_english"
+        />
+
+</RelativeLayout>

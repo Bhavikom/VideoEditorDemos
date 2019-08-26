@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!-- color -->
+    <color name="lsq_color_white">#ffffff</color>
+    <color name="lsq_color_black">#000000</color>
+    <color name="lsq_color_transparent">#00000000</color>
+
+
+    <!-- alpha -->
+    <color name="lsq_alpha_black_66">#66000000</color>
+
+    <color name="lsq_alpha_black_7f">#7F000000</color>
+
+    <color name="lsq_alpha_white_99">#99ffffff</color>
+
+
+    <!-- actionsheet -->
+    <color name="lsq_actionsheet_title_color">#666666</color>
+
+
+    <color name="lsq_background_entry_default">#FFFFFF</color>
+
+    <color name="lsq_color_api_gray">#c0c0c0</color>
+
+
+</resources>

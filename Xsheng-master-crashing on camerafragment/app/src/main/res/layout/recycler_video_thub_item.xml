@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="120dp"
+    android:layout_height="160dp">
+
+    <ImageView
+        android:id="@+id/my_video_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/app_name" />
+
+    <ImageView
+        android:id="@+id/my_video_love"
+        android:src="@mipmap/love"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:contentDescription="@string/app_name"
+        android:layout_margin="5dp"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

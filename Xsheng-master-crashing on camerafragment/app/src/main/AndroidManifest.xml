@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="zippler.cn.xs">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.SplashActivity"
+            android:theme="@style/splashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.MainActivity" />
+        <activity android:name=".activity.BaseActivity" />
+        <activity android:name=".activity.GuideActivity" />
+        <activity android:name=".activity.PreviewActivity" />
+        <activity android:name=".activity.RecorderActivity" />
+        <activity android:name=".activity.DeployActivity" />
+        <activity android:name=".activity.PreviewMusicActivity" />
+        <activity android:name=".activity.PreviewFullVideoActivity" />
+        <activity android:name=".activity.SettingsActivity" />
+        <activity android:name=".activity.UserInfoActivity" />
+        <activity android:name=".activity.AboutActivity" />
+        <activity android:name=".activity.GuideRecorderActivity" />
+        <activity
+            android:name=".activity.CommentActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name=".activity.MusicChooseActivity" />
+        <activity android:name=".activity.TransmissionActivity"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">涂图视频融合</string>
+
+    <string name="lsq_next">下一步</string>
+
+    <string name="lsq_min_time_effect_tips">特效时长最少%s秒</string>
+    <string name="lsq_editor_item_image">图片</string>
+    <string name="lsq_editor_item_video">视频</string>
+    <string name="lsq_editor_item_video_image">视频/图片</string>
+    <string name="lsq_change_video_or_image">替换视频/图片</string>
+    <string name="lsq_assets_loading">资源加载中.....</string>
+</resources>

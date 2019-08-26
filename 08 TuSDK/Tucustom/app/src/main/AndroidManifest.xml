@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.yasoka.screenrecord">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/> <!-- 获取WIFI信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/> <!-- 允许应用程序写数据到外部存储设备（主要是SD卡） -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/> <!-- 在sdcard中创建/删除文件的权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/> <!-- 请求访问使用照相设备 -->
+    <uses-permission android:name="android.permission.CAMERA"/> <!-- 开启闪光灯权限 -->
+    <uses-permission android:name="android.permission.FLASHLIGHT"/> <!-- 访问麦克风 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-feature android:name="android.hardware.camera.flash"/> <!-- 以下为非必要权限 -->
+    <!-- 位置信息 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/> <!-- 允许访问GPS -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/> <!-- 读取本机信息 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/> <!-- 读取日志 -->
+    <uses-permission android:name="android.permission.READ_LOGS"/><uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/> <!-- 获取WIFI信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/> <!-- 允许应用程序写数据到外部存储设备（主要是SD卡） -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/> <!-- 在sdcard中创建/删除文件的权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/> <!-- 请求访问使用照相设备 -->
+    <uses-permission android:name="android.permission.CAMERA"/> <!-- 开启闪光灯权限 -->
+    <uses-permission android:name="android.permission.FLASHLIGHT"/> <!-- 访问麦克风 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-feature android:name="android.hardware.camera.flash"/> <!-- 以下为非必要权限 -->
+    <!-- 位置信息 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/> <!-- 允许访问GPS -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/> <!-- 读取本机信息 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/> <!-- 读取日志 -->
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+
+    <application
+        android:name=".videoedit.TuApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name=".videoedit.SplashActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name=".videoedit.DemoEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name=".videoedit.ComponentListActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name=".videoedit.record.MovieRecordFullScreenActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name=".videoedit.album.MovieAlbumActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name=".videoedit.album.MediaAlbumActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name=".videoedit.editor.MovieEditorActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name=".videoedit.editor.MovieEditorPreviewActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"/> <!-- *******************公共分组控制器******************* -->
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name=".sdk.core.lasque.tusdk.impl.activity.TuFragmentActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name=".videoedit.component.MovieMixerActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name=".videoedit.component.MovieThumbActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name=".videoedit.component.MovieSplicerActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name=".videoedit.component.MovieCutActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name=".videoedit.component.AudioRecordActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name=".videoedit.component.AudioPitchEngineActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name=".videoedit.component.AudioMixedActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name=".videoedit.editor.MovieEditorCutActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:name=".TestActivity" />
+        <activity android:name=".videoedit.album.ImagePreviewActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+    </application>
+
+</manifest>

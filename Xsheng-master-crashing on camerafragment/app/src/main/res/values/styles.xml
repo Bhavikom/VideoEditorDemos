@@ -1,0 +1,48 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#000000</item>
+        <item name="colorPrimaryDark">#ee000000</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="ShareElementAppTheme" parent="AppTheme">
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+        <item name="android:windowAllowReturnTransitionOverlap">true</item>
+        <item name="android:windowSharedElementEnterTransition">@android:transition/move</item>
+        <item name="android:windowSharedElementExitTransition">@android:transition/move</item>
+        <item name="android:windowEnterTransition">@android:transition/explode</item>
+        <item name="android:windowExitTransition">@android:transition/explode</item>
+    </style>
+
+    <style name="me_tab_state" parent="android:Widget">
+        <item name="tabBackground">@drawable/me_tab_item_background</item>
+        <item name="tabIndicatorColor">#ffffff</item>
+        <item name="tabIndicatorHeight">2dp</item>
+    </style>
+
+    <style name="splashTheme" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/splash_bg</item>
+        <item name="android:windowFullscreen">true</item>
+        <!-- <item name="android:windowIsTranslucent">true</item> -->
+    </style>
+
+    <style name="record_pop_anim" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/pop_in_anim</item>
+        <item name="android:windowExitAnimation">@anim/pop_exit_anim</item>
+    </style>
+
+
+    <style name="CustomSeekbarStyle" >
+        <item name="android:maxHeight">10dp</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@color/colorAccent</item>
+        <item name="android:progressDrawable">@drawable/seekbar_progress_drawable</item>
+        <item name="android:minHeight">10dp</item>
+        <item name="android:thumb">@mipmap/circle</item>
+    </style>
+
+</resources>

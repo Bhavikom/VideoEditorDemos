@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: ffmpeg-windows-x86_64">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/ffmpeg/ffmpeg-windows-x86_64.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
