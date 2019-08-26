@@ -1,0 +1,22 @@
+(1) MainActivity
+
+	(2) SelectMediaActivity
+
+		MediaFragment 
+			SelectMediaActivity - selectCreateRatio()
+				VideoEditActivity
+
+					ThemeActivity
+					EditActivity
+					FilterActivity
+					AnimateStickerActivity
+					CaptionActivity
+					CompoundCaptionActivity
+					WaterMarkActivity
+
+				*** to save video funcitonality
+				
+				mTitleBar.setOnTitleBarClickListener
+					mCompileVideoFragment.compileVideo() method
+
+					
