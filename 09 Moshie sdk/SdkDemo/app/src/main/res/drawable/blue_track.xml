@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 高度26 -->
+    <size android:height="21dp"
+        android:width="54dp"/>
+    <!-- 圆角弧度 6 -->
+    <corners android:radius="3dp"/>
+    <!-- 变化率 -->
+    <gradient
+        android:endColor="#979797"
+        android:startColor="#979797" />
+
+</shape>

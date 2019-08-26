@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/download_more"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="13dp">
+
+            <ImageView
+                android:id="@+id/dowanloadImage"
+                android:layout_width="35dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/download_more" />
+
+            <TextView
+                android:id="@+id/dowanloadMoreText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dowanloadImage"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="23dp"
+                android:text="@string/more"
+                android:textColor="@color/ccffffff"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/captionStyleRecycleView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="26dp"
+            android:layout_weight="1"
+            android:fadingEdgeLength="30dp"
+            android:requiresFadingEdge="horizontal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/applyToAll"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="13dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/applyToAllImage"
+            android:layout_width="15dp"
+            android:layout_height="15dp" />
+
+        <TextView
+            android:id="@+id/applyToAllText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:text="@string/apply_to_all"
+            android:textColor="#ff909293"
+            android:textSize="10sp" />
+    </LinearLayout>
+</RelativeLayout>

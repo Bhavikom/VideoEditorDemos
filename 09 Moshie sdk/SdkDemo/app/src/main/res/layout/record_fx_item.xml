@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="13dp"
+    android:layout_marginRight="13dp">
+
+    <ImageView
+        android:id="@+id/record_fx_image"
+        android:layout_width="49dp"
+        android:layout_height="49dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/record_fx_1"/>
+
+    <TextView
+        android:id="@+id/record_fx_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="1dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:layout_below="@+id/record_fx_image"
+        android:layout_centerHorizontal="true"/>
+
+    <com.meishe.sdkdemo.edit.view.RoundImageView
+        android:id="@+id/record_fx_select"
+        android:layout_width="49dp"
+        android:layout_height="49dp"
+        android:background="@color/fx_select"
+        app:x_radius="4dp"
+        app:y_radius="4dp"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

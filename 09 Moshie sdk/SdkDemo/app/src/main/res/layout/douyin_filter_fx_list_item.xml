@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@null">
+
+    <RelativeLayout
+        android:layout_width="54dp"
+        android:layout_height="54dp">
+        <RelativeLayout
+            android:layout_width="49dp"
+            android:layout_height="49dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true">
+            <ImageView
+                android:id="@+id/image_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <View
+                android:id="@+id/layer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_shape_70blue"
+                android:visibility="gone"/>
+
+            <View
+                android:id="@+id/assetDownloadShadow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_douyin_filter_shadow_corner"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true">
+            <ImageView
+                android:id="@+id/downloadAssetButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@mipmap/asset_download"/>
+            <com.meishe.sdkdemo.edit.view.CircleProgressBar
+                android:id="@+id/circleProgressBar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/unsel_white"
+        android:textSize="12sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="62dp"
+    android:layout_height="62dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/item_cs_image"
+        android:layout_width="49dp"
+        android:layout_height="49dp"
+        android:layout_centerInParent="true"
+        android:contentDescription="@null"
+        android:scaleType="fitXY" />
+
+    <ImageView
+        android:id="@+id/item_cs_cover"
+        android:layout_width="49dp"
+        android:layout_height="49dp"
+        android:layout_centerInParent="true"
+        android:background="@color/ms994a90e2"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:visibility="gone" />
+
+    <com.meishe.sdkdemo.capturescene.view.CircleBarView
+        android:id="@+id/item_cs_download"
+        android:layout_width="@dimen/dp13"
+        android:layout_height="@dimen/dp13"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/download"
+        android:visibility="gone"
+        app:CBProgressColor="@color/dy_text_after_music_seleeted"
+        app:CBNoneProgressColor="@color/menu_selected"/>
+</RelativeLayout>

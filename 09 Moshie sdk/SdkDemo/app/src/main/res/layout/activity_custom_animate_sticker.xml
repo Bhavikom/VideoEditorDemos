@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.meishe.sdkdemo.edit.animatesticker.customsticker.CustomAnimateStickerActivity">
+
+    <com.meishe.sdkdemo.edit.view.CustomTitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        >
+
+    </com.meishe.sdkdemo.edit.view.CustomTitleBar>
+
+    <RelativeLayout
+        android:id="@+id/middleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#ff242728">
+
+        <RelativeLayout
+            android:id="@+id/customImageLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/customAnimateImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:scaleType="fitCenter" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/customImageLayout"
+            android:layout_alignTop="@+id/customImageLayout">
+
+            <com.meishe.sdkdemo.edit.view.CustomStickerDrawRect
+                android:id="@+id/customDrawRect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="146dp"
+        android:background="#ff242728">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="13dp">
+
+            <RelativeLayout
+                android:id="@+id/freeMode"
+                android:layout_width="wrap_content"
+                android:layout_height="72dp">
+
+                <ImageView
+                    android:id="@+id/imageFree"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@mipmap/custom_free_select" />
+
+                <TextView
+                    android:id="@+id/freeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="27dp"
+                    android:layout_below="@+id/imageFree"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/free"
+                    android:textColor="#ff4a90e2"
+                    android:textSize="@dimen/sp12" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/circleMode"
+                android:layout_width="wrap_content"
+                android:layout_height="72dp"
+                android:layout_marginLeft="77dp">
+
+                <ImageView
+                    android:id="@+id/imageCircle"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@mipmap/custom_circle" />
+
+                <TextView
+                    android:id="@+id/circleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="27dp"
+                    android:layout_below="@+id/imageCircle"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/circle"
+                    android:textColor="#ff909293"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/squareMode"
+                android:layout_width="wrap_content"
+                android:layout_height="72dp"
+                android:layout_marginLeft="77dp">
+
+                <ImageView
+                    android:id="@+id/imageSquare"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@mipmap/custom_square" />
+
+                <TextView
+                    android:id="@+id/squareText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="27dp"
+                    android:layout_below="@+id/imageSquare"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/square"
+                    android:textColor="#ff909293"
+                    android:textSize="@dimen/sp12" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/customStickerFinish"
+            android:background="#1AFFFFFF" />
+
+        <ImageView
+            android:id="@+id/customStickerFinish"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="15dp"
+            android:background="@mipmap/finish" />
+    </RelativeLayout>
+</LinearLayout>

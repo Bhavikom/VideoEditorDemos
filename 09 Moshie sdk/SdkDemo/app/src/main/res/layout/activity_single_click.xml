@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ff242728"
+    tools:context="com.meishe.sdkdemo.edit.watermark.SingleClickActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <com.meishe.sdkdemo.edit.view.CustomTitleBar
+            android:id="@+id/title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            >
+
+        </com.meishe.sdkdemo.edit.view.CustomTitleBar>
+
+        <LinearLayout
+            android:id="@+id/single_contain"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical" />
+        <TextView
+            android:id="@+id/sigle_tv_startEdit"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="bottom"
+            android:background="@color/msff242728"
+            android:gravity="center"
+            android:text="@string/startMaking"
+            android:textColor="@color/ff4a90e2"
+            android:textSize="16sp"
+            android:visibility="gone">
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/gifToCafLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="#99000000"
+        android:visibility="gone">
+        <ProgressBar
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:indeterminateBehavior="repeat"
+            android:indeterminateDrawable="@drawable/progress_eight_petal_xml" />
+
+        <TextView
+            android:id="@+id/boomRang_preview_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp20"
+            android:text="@string/generating"
+            android:textColor="#ffffffff"
+            android:textSize="16sp" />
+    </LinearLayout>
+</RelativeLayout>

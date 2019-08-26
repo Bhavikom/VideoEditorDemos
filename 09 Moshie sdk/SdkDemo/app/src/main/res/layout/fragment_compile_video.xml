@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99000000"
+    tools:context="com.meishe.sdkdemo.edit.CompileVideoFragment">
+    <LinearLayout
+        android:id="@+id/compileVideoRect"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        <ProgressBar
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:indeterminateBehavior="repeat"
+            android:indeterminateDrawable="@drawable/progress_eight_petal_xml" />
+
+        <TextView
+            android:id="@+id/boomRang_preview_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp20"
+            android:text="@string/generating"
+            android:textColor="#ffffffff"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/compileVideoFinished"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/completedTips"
+        android:textColor="#ffffffff"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:visibility="gone" />
+</RelativeLayout>
+
+

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/assetItem"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginRight="12dp"
+    android:background="@color/nv_colorTranslucent">
+
+    <RelativeLayout
+        android:id="@+id/layoutAsset"
+        android:layout_width="54dp"
+        android:layout_height="54dp">
+        
+        <com.meishe.sdkdemo.edit.view.RoundImageView
+            android:id="@+id/imageAsset"
+            android:layout_width="49dp"
+            android:layout_height="49dp"
+            android:src="@mipmap/icon_edit_filter"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            app:x_radius="4dp"
+            app:y_radius="4dp"/>
+        
+        <RelativeLayout
+            android:id="@+id/layoutAssetSelect"
+            android:layout_width="49dp"
+            android:layout_height="49dp"
+            android:background="@drawable/fx_item_radius_shape_select"
+            android:visibility="visible">
+            
+            <ImageView
+                android:id="@+id/imageAssetSelect"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:background="@drawable/particle_edit_fx_select"
+                android:visibility="gone"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <View
+            android:id="@+id/assetDownloadShadow"
+            android:layout_width="49dp"
+            android:layout_height="49dp"
+            android:background="@drawable/shape_douyin_filter_shadow_corner"/>
+        <RelativeLayout
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true">
+            <ImageView
+                android:id="@+id/downloadAssetButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@mipmap/asset_download"/>
+            <com.meishe.sdkdemo.edit.view.CircleProgressBar
+                android:id="@+id/circleProgressBar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    
+    <TextView
+        android:id="@+id/nameAsset"
+        android:layout_width="54dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/ccffffff"
+        android:textAlignment="center"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textSize="@dimen/sp12" />
+</LinearLayout>

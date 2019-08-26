@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/assetItem"
+    android:layout_width="64dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/nv_colorTranslucent">
+    <ImageView
+        android:id="@+id/imageAsset"
+        android:layout_width="49dp"
+        android:layout_height="49dp"
+        android:src="@mipmap/default_filter"
+        android:adjustViewBounds="true"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="fitXY"/>
+    <TextView
+        android:id="@+id/nameAsset"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/ccffffff"
+        android:textSize="@dimen/sp12" />
+</LinearLayout>

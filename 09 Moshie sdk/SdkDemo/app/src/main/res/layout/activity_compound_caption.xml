@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.meishe.sdkdemo.edit.compoundcaption.CompoundCaptionActivity">
+
+    <com.meishe.sdkdemo.edit.view.CustomTitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+         />
+
+    <RelativeLayout
+        android:id="@+id/video_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RelativeLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="213dp"
+        android:background="#ff242728">
+
+        <RelativeLayout
+            android:id="@+id/control_layout"
+            android:layout_width="match_parent"
+            android:layout_height="34dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/zoom_out_btn"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_centerInParent="true"
+                        android:src="@mipmap/zoom_out" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/play_cur_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="@string/zeroZZZ"
+                    android:textColor="#ffffff"
+                    android:textSize="10sp" />
+
+                <RelativeLayout
+                    android:id="@+id/zoom_in_btn"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_centerInParent="true"
+                        android:src="@mipmap/zoom_in" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/modifyButton"
+                android:layout_width="40dp"
+                android:layout_height="17dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="13dp"
+                android:background="@drawable/shape_caption_style_corner_button"
+                android:text="@string/modify"
+                android:textAllCaps="false"
+                android:textColor="#ffffffff"
+                android:textSize="10sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/timeline_edit_layout"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:layout_below="@id/control_layout">
+
+            <com.meishe.sdkdemo.edit.timelineEditor.NvsTimelineEditor
+                android:id="@+id/caption_timeline_editor"
+                android:layout_width="wrap_content"
+                android:layout_height="49dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="48dp" />
+
+
+            <RelativeLayout
+                android:id="@+id/play_btn_layout"
+                android:layout_width="48dp"
+                android:layout_height="26dp"
+                android:layout_centerVertical="true">
+
+                <Button
+                    android:id="@+id/play_btn"
+                    android:layout_width="18dp"
+                    android:layout_height="21dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@mipmap/icon_edit_play" />
+
+            </RelativeLayout>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/span" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/add_caption_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/timeline_edit_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/add" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@id/ok_btn"
+            android:background="#1AFFFFFF" />
+
+        <ImageView
+            android:id="@+id/ok_btn"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/dp12"
+            android:background="@mipmap/finish" />
+
+        <RelativeLayout
+            android:id="@+id/compCaptionAsset_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ff242728"
+            android:visibility="gone">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white_10"
+                android:layout_marginTop="39dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp50"
+                android:orientation="horizontal"
+                android:layout_marginTop="78dp">
+                <ImageView
+                    android:id="@+id/comCaptionAssetDownload"
+                    android:layout_width="35dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="@dimen/dp13"
+                    android:layout_marginRight="@dimen/dp12"
+                    android:layout_gravity="center_vertical"
+                    android:background="@mipmap/download_more"/>
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/comCaptionRecycler"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp13"
+                    android:layout_weight="1">
+
+                </android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_above="@+id/comCaptionAssetFinish"
+                android:background="@color/white_10" />
+
+            <ImageView
+                android:id="@+id/comCaptionAssetFinish"
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="11dp"
+                android:layout_marginBottom="12dp"
+                android:background="@mipmap/finish" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

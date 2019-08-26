@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.meishe.sdkdemo.particle.LiveWindow
+        android:id="@+id/liveWindow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/imageAutoFocusRect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@null"
+        android:scaleType="fitCenter"
+        android:visibility="invisible"
+        app:srcCompat="@mipmap/icon_auto_focus" />
+
+    <TextView
+        android:id="@+id/recordTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:text="@string/zeroZZZ"
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/closeButton"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="20dp"
+        android:background="@mipmap/icon_close"
+        android:contentDescription="@null" />
+
+    <LinearLayout
+        android:id="@+id/functionButtonLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="13dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/switchFacingLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/switchFacingButton"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/icon_switch" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="4dp"
+                android:text="@string/switch_camera"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp12" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/flashLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/flashButton"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/icon_flash_off" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="4dp"
+                android:text="@string/flash_cs"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp12" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/particleLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/particleButton"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/particle_capture_filter" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="4dp"
+                android:text="@string/particle"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp12" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/graffitiLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/graffitiButton"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/particle_capture_graffiti" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="4dp"
+                android:text="@string/graffiti"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp12" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/startLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp">
+
+            <ImageView
+                android:id="@+id/delete"
+                android:layout_width="48dp"
+                android:layout_height="33dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="28dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toLeftOf="@+id/startRecordingImage"
+                android:background="@mipmap/particle_capture_delete"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/startRecordingImage"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/particle_default"
+                android:clickable="true" />
+
+            <TextView
+                android:id="@+id/startText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="#ffffff"
+                android:textSize="12dp" />
+
+
+            <ImageView
+                android:id="@+id/next"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="28dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toRightOf="@+id/startRecordingImage"
+                android:background="@drawable/capturescene_record_button_sure"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/tipsMouthLayout"
+        android:layout_width="206dp"
+        android:layout_height="67dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="171dp"
+        android:background="#1A000000"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/tipsMouthImage"
+            android:layout_width="29dp"
+            android:layout_height="29dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/particle_capture_face_tip" />
+
+        <TextView
+            android:id="@+id/tipsMouthText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tipsMouthImage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="7dp"
+            android:text="@string/tipsMouth"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="#FFFFFFFF"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tipsEyeLayout"
+        android:layout_width="206dp"
+        android:layout_height="67dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="171dp"
+        android:background="#1A000000"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/tipsEyeImage"
+            android:layout_width="29dp"
+            android:layout_height="29dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/particle_capture_face_tip" />
+
+        <TextView
+            android:id="@+id/tipsEyeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tipsEyeImage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="7dp"
+            android:text="@string/tipsEye"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="#FFFFFFFF"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tipsHandLayout"
+        android:layout_width="259dp"
+        android:layout_height="73dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="171dp"
+        android:background="#1A000000"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/tipsHandImage"
+            android:layout_width="19dp"
+            android:layout_height="34dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/particle_capture_hand_tip" />
+
+        <TextView
+            android:id="@+id/tipsHandText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tipsHandImage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="7dp"
+            android:text="@string/tipsHand"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="#FFFFFFFF"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/particle_fx_layout"
+        layout="@layout/particle_capture_fx"
+        android:visibility="gone" />
+</RelativeLayout>

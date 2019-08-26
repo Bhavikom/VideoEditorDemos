@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/douyin_capture_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context="com.meishe.sdkdemo.douvideo.DouVideoCaptureActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/douyin_edit_background"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="@color/black">
+
+            <ImageButton
+                android:id="@+id/close_btn"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="29dp"
+                android:background="@mipmap/icon_close" />
+
+            <TextView
+                android:id="@+id/compile_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="@dimen/dp13"
+                android:layout_marginRight="@dimen/dp13"
+                android:text="@string/compile"
+                android:textColor="#ff4a90e2"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <com.meicam.sdk.NvsLiveWindow
+                android:id="@+id/live_window"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true" />
+
+            <Button
+                android:id="@+id/play_button"
+                android:layout_width="28dp"
+                android:layout_height="33dp"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/douvideo_edit_play" />
+
+        </RelativeLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="11dp" />
+
+        <RelativeLayout
+            android:id="@+id/sequence_view_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <com.meicam.sdk.NvsMultiThumbnailSequenceView
+                android:id="@+id/sequence_view"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:layout_centerVertical="true" />
+
+            <com.meishe.sdkdemo.douvideo.FxSeekView
+                android:id="@+id/fx_seek_view"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="7dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/effect_tip_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:text="@string/filter_fx_tip"
+                android:textColor="@color/color60PercentWhite"
+                android:textSize="@dimen/sp12" />
+
+            <Button
+                android:id="@+id/undo_btn"
+                android:layout_width="39dp"
+                android:layout_height="17dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dp"
+                android:background="@mipmap/undo"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp" />
+
+        <RelativeLayout
+            android:id="@+id/recyclerview_layout"
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/filter_fx_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fadingEdgeLength="30dp"
+                android:requiresFadingEdge="horizontal" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/time_fx_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fadingEdgeLength="30dp"
+                android:requiresFadingEdge="horizontal"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white_10" />
+
+        <LinearLayout
+            android:id="@+id/type_bar"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:background="@color/douyin_edit_background"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/filter_fx_select_btn"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:text="@string/filter_fx"
+                android:textAllCaps="false"
+                android:textColor="@color/ff4a90e2"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="13dp"
+                android:layout_marginBottom="13dp"
+                android:background="@color/white_10" />
+
+            <Button
+                android:id="@+id/timeline_fx_select_btn"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:text="@string/timeline_fx"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/compile_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</RelativeLayout>

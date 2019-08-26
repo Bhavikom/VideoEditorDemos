@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/super_zoom_fx_item_ll"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/colorTranslucent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="34dp"
+        android:layout_height="34dp">
+
+        <ImageView
+            android:id="@+id/super_zoom_item_selected_bg_iv"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:background="@drawable/super_zoom_selected_circle_bg"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/super_zoom_unselected_bg_iv"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:background="@drawable/red_circle_shape"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/need_download_icon_iv"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:src="@mipmap/asset_download_icon"
+            android:visibility="invisible" />
+
+        <com.meishe.sdkdemo.edit.view.CircleProgressBar
+            android:id="@+id/super_zoom_circle_progressbar"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/super_zoom_item_text_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="火焰"
+        android:textColor="#FFFFFFFF"
+        android:textSize="11sp"
+        android:visibility="visible" />
+
+</LinearLayout>

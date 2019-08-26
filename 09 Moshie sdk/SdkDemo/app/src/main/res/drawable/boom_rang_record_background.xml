@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#fffc3e3e" />
+            <size
+                android:width="52dp"
+                android:height="52dp" />
+        </shape>
+    </item>
+    <item>
+        <bitmap
+            android:gravity="center"
+            android:src="@drawable/main_fragment2_item4_image"
+            android:dither="true"
+            android:antialias="true">
+        </bitmap>
+
+    </item>
+</layer-list>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dp10">10dp</dimen>
+    <dimen name="dp12">12dp</dimen>
+    <dimen name="dp13">13dp</dimen>
+    <dimen name="dp15">15dp</dimen>
+    <dimen name="dp17">17dp</dimen>
+    <dimen name="dp20">20dp</dimen>
+    <dimen name="dp50">50dp</dimen>
+    <dimen name="dp77">77dp</dimen>
+    <dimen name="dp64">64dp</dimen>
+
+    <dimen name="sp12">12sp</dimen>
+    <dimen name="sp16">16sp</dimen>
+
+    <!-- 编辑页面 -->
+    <dimen name="edit_bottom_layout_height">213dp</dimen>
+    <dimen name="edit_titleBar_height">64dp</dimen>
+    <dimen name="tablayout_text_size">12sp</dimen>
+
+    <!-- 水印 -->
+    <dimen name="edit_waterMark_width">63dp</dimen>
+    <dimen name="edit_waterMark_height">57dp</dimen>
+
+    <!-- 标题栏字体 -->
+    <dimen name="title_textSize">16sp</dimen>
+
+    <!-- 统一规范 -->
+    <dimen name="title_icon_back_width">10dp</dimen>
+    <dimen name="title_icon_back_height">17dp</dimen>
+    <dimen name="select_recycle_marginLeftAndRight">10dp</dimen>
+    <dimen name="select_item_between">5dp</dimen>
+    <dimen name="select_item_start_end">3dp</dimen>
+</resources>

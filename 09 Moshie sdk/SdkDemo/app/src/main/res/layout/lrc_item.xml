@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/assetItem"
+    android:layout_width="64dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/nv_colorTranslucent">
+
+    <RelativeLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_width="49dp"
+        android:layout_height="49dp">
+        <ImageView
+            android:id="@+id/imageAsset"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/default_filter"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"/>
+        <View
+            android:id="@+id/selectedItem"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_border_caption_selected"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/nameAsset"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/ccffffff"
+        android:textSize="@dimen/sp12" />
+</LinearLayout>

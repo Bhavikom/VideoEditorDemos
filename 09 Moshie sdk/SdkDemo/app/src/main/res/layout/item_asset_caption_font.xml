@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="82dp"
+    android:layout_height="54dp">
+
+    <RelativeLayout
+        android:layout_width="77dp"
+        android:layout_height="49dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true">
+        <ImageView
+            android:id="@+id/captionFontAssetCover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <View
+            android:id="@+id/selectedItem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_border_animatesticker_selected"/>
+        <View
+            android:id="@+id/downloadShadow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_caption_font_download_shadow_corner_"/>
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/downloadAssetButton"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:src="@mipmap/asset_download"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"/>
+    <com.meishe.sdkdemo.edit.view.CircleProgressBar
+        android:id="@+id/circleProgressBar"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"/>
+</RelativeLayout>

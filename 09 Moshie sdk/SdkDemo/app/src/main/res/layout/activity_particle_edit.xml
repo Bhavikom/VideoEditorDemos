@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff242728">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorTranslucent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/top_button_layout"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="@color/black"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"
+            android:paddingBottom="10dp">
+
+            <RelativeLayout
+                android:id="@+id/btn_back"
+                android:layout_width="64dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="@dimen/title_icon_back_width"
+                    android:layout_height="@dimen/title_icon_back_height"
+                    android:layout_alignParentBottom="true"
+                    android:src="@mipmap/icon_edit_back" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/compileBtn"
+                android:layout_width="64dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true">
+
+                <TextView
+                    android:id="@+id/compile_to_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:text="@string/compile"
+                    android:textColor="#ff4a90e2"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <ImageButton
+                android:id="@+id/play_video"
+                android:layout_width="@dimen/dp15"
+                android:layout_height="16dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/particle_video_play" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/live_window_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <com.meishe.sdkdemo.particle.LiveWindow
+                android:id="@+id/live_window"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="213dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/colorTranslucent">
+
+            <com.meishe.sdkdemo.particle.ParticleSqLayout
+                android:id="@+id/sequence_layout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="13dp">
+
+            </com.meishe.sdkdemo.particle.ParticleSqLayout>
+
+            <RelativeLayout
+                android:id="@+id/seekbar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sequence_layout"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/selectingPosition_paintPicture"
+                    android:textColor="#99ffffff"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/btn_cancel"
+                    android:layout_width="39dp"
+                    android:layout_height="17dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/undo"/>
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/particle_effect_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="91dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="15dp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/particle_range_layout"
+        android:layout_width="match_parent"
+        android:layout_height="97dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:id="@+id/particle_size_range"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/particle_range"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:text="@string/particle_size"
+                android:textColor="@color/ccffffff"
+                android:textSize="@dimen/sp12" />
+
+            <SeekBar
+                android:id="@+id/particle_size_seekBar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:focusable="true"
+                android:maxHeight="2dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:progressDrawable="@drawable/seekbar"
+                android:thumb="@drawable/default_seek_thumb" />
+
+            <TextView
+                android:id="@+id/particle_cur_size_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="13dp"
+                android:text="@string/oneX"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/particle_range"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:text="@string/particle_num"
+                android:textColor="@color/ccffffff"
+                android:textSize="13sp" />
+
+            <SeekBar
+                android:id="@+id/particle_range_seekBar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:focusable="true"
+                android:maxHeight="2dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:progressDrawable="@drawable/seekbar"
+                android:thumb="@drawable/default_seek_thumb" />
+
+            <TextView
+                android:id="@+id/particle_cur_range_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="13dp"
+                android:text="@string/oneX"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/compilePage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</RelativeLayout>

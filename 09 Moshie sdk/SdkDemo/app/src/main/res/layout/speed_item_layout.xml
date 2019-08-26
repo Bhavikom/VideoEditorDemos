@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/button_style">
+    <Button
+        android:id="@+id/super_slow_speed_btn"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:background="@drawable/douvideo_speed_left_shape"
+        android:text="@string/speed_super_slow"
+        android:textColor="@color/douyin_speed_text_color"
+        android:textSize="12sp"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/slow_speed_btn"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:background="@color/douyin_speed_color"
+        android:text="@string/speed_slow"
+        android:textColor="@color/douyin_speed_text_color"
+        android:textSize="12sp"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/standard_speed_btn"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:background="@drawable/douvideo_speed_select_shape"
+        android:text="@string/speed_standard"
+        android:textColor="@color/douyin_speed_text_select_color"
+        android:textSize="12sp"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/fast_speed_btn"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:text="@string/speed_fast"
+        android:textSize="12sp"
+        android:background="@color/douyin_speed_color"
+        android:textColor="@color/douyin_speed_text_color"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/super_fast_speed_btn"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:text="@string/speed_super_fast"
+        android:textSize="12sp"
+        android:background="@drawable/douvideo_speed_right_shape"
+        android:textColor="@color/douyin_speed_text_color"
+        android:textAllCaps="false"/>
+</LinearLayout>

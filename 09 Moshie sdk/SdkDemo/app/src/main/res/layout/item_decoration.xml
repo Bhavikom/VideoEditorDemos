@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="46dp"
+    android:paddingLeft="10dp">
+
+    <TextView
+        android:id="@+id/tv_media_time"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="@string/date"
+        android:textColor="@color/ffffffff" />
+
+
+    <Button
+        android:id="@+id/btn_selected_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@null"
+        android:text="@string/checkAll"
+        android:textColor="@color/ff4a90e2" />
+
+</RelativeLayout>

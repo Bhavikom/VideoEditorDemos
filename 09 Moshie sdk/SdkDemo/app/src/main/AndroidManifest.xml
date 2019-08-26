@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.meishe.sdkdemo">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+
+    <!-- 必须的权限 -->
+    <!-- <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- <uses-permission android:name="android.permission.INTERNET" /> -->
+
+    <!-- 推荐的权限 -->
+    <!-- 添加如下权限，以便使用更多的第三方SDK和更精准的统计数据 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <application
+        android:name=".MSApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_meishe"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:allowBackup"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LuncherActivityTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".capture.CaptureActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BaseAnimationTheme" />
+        <activity
+            android:name=".selectmedia.SelectMediaActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BaseAnimationTheme" />
+        <activity
+            android:name=".edit.VideoEditActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BaseAnimationTheme" />
+        <activity
+            android:name=".ParameterSettingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BaseAnimationTheme"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".makecover.MakeCoverActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BaseAnimationTheme" />
+        <activity
+            android:name=".musicLyrics.MusicLyricsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BaseAnimationTheme" />
+        <activity
+            android:name=".edit.clipEdit.EditActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BaseAnimationTheme" />
+        <activity
+            android:name=".utils.permission.PermissionsActivity"
+            android:theme="@style/TranslucentFullScreenTheme" />
+        <activity
+            android:name=".edit.filter.FilterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BaseAnimationTheme" />
+        <activity
+            android:name=".edit.theme.ThemeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BaseAnimationTheme"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".edit.clipEdit.spilt.SpiltActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BaseAnimationTheme" />
+        <activity
+            android:name=".edit.clipEdit.trim.TrimActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BaseAnimationTheme" />
+        <activity
+            android:name=".edit.animatesticker.AnimateStickerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BaseAnimationTheme" />
+        <activity
+            android:name=".edit.Caption.CaptionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BaseAnimationTheme" />
+        <activity
+            android:name=".edit.transition.TransitionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BaseAnimationTheme" />
+        <activity
+            android:name=".edit.clipEdit.speed.SpeedActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BaseAnimationTheme" />
+        <activity
+            android:name=".edit.Caption.CaptionStyleActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BaseAnimationTheme"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".edit.music.MusicActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BaseAnimationTheme" />
+        <activity
+            android:name=".edit.music.SelectMusicActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BaseAnimationTheme" />
+        <activity
+            android:name=".edit.clipEdit.correctionColor.CorrectionColorActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BaseAnimationTheme" />
+        <activity
+            android:name=".edit.clipEdit.volume.VolumeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BaseAnimationTheme" />
+        <activity
+            android:name=".edit.clipEdit.adjust.AdjustActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BaseAnimationTheme" />
+        <activity
+            android:name=".edit.clipEdit.photo.DurationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BaseAnimationTheme" />
+        <activity
+            android:name=".edit.clipEdit.photo.PhotoMovementActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BaseAnimationTheme" />
+        <activity
+            android:name=".edit.record.RecordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BaseAnimationTheme" />
+        <activity
+            android:name=".edit.animatesticker.customsticker.CustomAnimateStickerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BaseAnimationTheme" />
+        <activity
+            android:name=".edit.animatesticker.customsticker.CustomAnimateStickerEffectActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BaseAnimationTheme" />
+        <activity
+            android:name=".edit.watermark.WaterMarkActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BaseAnimationTheme" />
+        <activity
+            android:name=".douvideo.DouVideoCaptureActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BaseAnimationTheme" />
+        <activity
+            android:name=".douvideo.DouVideoTrimActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BaseAnimationTheme" />
+        <activity
+            android:name=".douvideo.DouVideoEditActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BaseAnimationTheme" />
+        <activity
+            android:name=".edit.watermark.SingleClickActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BaseAnimationTheme" />
+        <activity
+            android:name=".musicLyrics.MultiVideoSelectActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BaseAnimationTheme" />
+        <activity
+            android:name=".particle.ParticleCaptureActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BaseAnimationTheme" />
+        <activity
+            android:name=".particle.ParticlePreviewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BaseAnimationTheme" />
+        <activity
+            android:name=".particle.ParticleEditActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BaseAnimationTheme" />
+        <activity
+            android:name=".particle.SelectVideoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BaseAnimationTheme" />
+        <activity
+            android:name=".picinpic.PictureInPictureActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BaseAnimationTheme" />
+        <activity
+            android:name=".capturescene.CaptureSceneActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BaseAnimationTheme" />
+        <activity
+            android:name=".picinpic.PicturInPicturePreviewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BaseAnimationTheme" />
+        <activity
+            android:name=".download.AssetDownloadActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BaseAnimationTheme" />
+        <activity
+            android:name=".capturescene.PreviewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BaseAnimationTheme" />
+        <activity
+            android:name=".feedback.FeedBackActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BaseAnimationTheme" />
+        <activity
+            android:name=".boomrang.BoomRangActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BaseAnimationTheme" />
+        <activity
+            android:name=".boomrang.BoomRangPreviewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BaseAnimationTheme" />
+        <activity
+            android:name=".flipcaption.FlipCaptionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BaseAnimationTheme" />
+        <activity
+            android:name=".flipcaption.FlipCaptionEditActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BaseAnimationTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".superzoom.SuperZoomActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BaseAnimationTheme" />
+        <activity
+            android:name=".superzoom.SuperZoomPreviewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BaseAnimationTheme" />
+        <activity
+            android:name=".edit.compoundcaption.CompoundCaptionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BaseAnimationTheme" />
+        <activity
+            android:name=".edit.compoundcaption.CompoundCaptionStyleActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BaseAnimationTheme" />
+        <!-- value的值填写你在友盟后台申请的应用Appkey -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5c231ab5f1f55665ae00021d" />
+        <!-- value的值填写渠道名称，例如yingyongbao。这里设置动态渠道变量 -->
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${UMENG_CHANNEL_VALUE}" />
+    </application>
+
+</manifest>

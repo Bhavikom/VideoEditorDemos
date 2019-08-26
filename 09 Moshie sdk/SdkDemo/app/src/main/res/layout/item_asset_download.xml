@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp">
+
+    <RelativeLayout
+        android:id="@+id/assetCoverLayout"
+        android:layout_width="46dp"
+        android:layout_height="51dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="13dp">
+
+        <ImageView
+            android:id="@+id/assetCover"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true" />
+
+        <ImageView
+            android:id="@+id/assetCover_type_image"
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/assetCoverLayout"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/assetName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#373b3d"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/assetRatio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#373b3d"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/assetSize"
+            android:layout_width="62dp"
+            android:layout_height="17dp"
+            android:textColor="#373b3d"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/download_button"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="13dp"
+        android:background="@drawable/download_button_shape_corner_download"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="12sp" />
+
+    <com.meishe.sdkdemo.download.DownloadProgressBar
+        android:id="@+id/downloadProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="13dp"
+        android:progressDrawable="@drawable/download_progressbar"
+        android:visibility="gone" />
+</RelativeLayout>

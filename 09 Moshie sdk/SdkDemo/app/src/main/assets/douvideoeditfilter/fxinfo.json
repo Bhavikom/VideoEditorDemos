@@ -1,0 +1,37 @@
+{
+	"fxInfoList":[
+		{
+			"name":"缩放",
+			"fxFileName":"66A7D54F-79C4-4DCC-82F7-F23949D92E0A.1.videofx",
+			"fxLicFileName":"66A7D54F-79C4-4DCC-82F7-F23949D92E0A.1.lic",
+			"imageName":"66A7D54F-79C4-4DCC-82F7-F23949D92E0A.png",
+			"type":"package",
+			"color":"#800B1746"
+		},
+		{
+			"name":"粒子",
+			"fxFileName":"A6D9A119-F5C6-6DD9-D053-1913F40827B5.1.videofx",
+			"fxLicFileName":"A6D9A119-F5C6-6DD9-D053-1913F40827B5.lic",
+			"imageName":"A6D9A119-F5C6-6DD9-D053-1913F40827B5.png",
+			"type":"package",
+			"color":"#8000FA9A"
+		},
+		{
+			"name":"闪白",
+			"fxFileName":"D2E1F664-58BB-46E5-ACEC-AC644E1286D8.1.videofx",
+			"fxLicFileName":"D2E1F664-58BB-46E5-ACEC-AC644E1286D8.1.lic",
+			"imageName":"D2E1F664-58BB-46E5-ACEC-AC644E1286D8.png",
+			"type":"package",
+			"color":"#80F0F8FF"
+		},
+		{
+			"name":"幻觉",
+			"fxFileName":"Video Echo",
+			"fxLicFileName":"Video Echo",
+			"imageName":"Video Echo.png",
+			"type":"builtin",
+			"color":"#800000CD"
+		}
+	]
+}
+

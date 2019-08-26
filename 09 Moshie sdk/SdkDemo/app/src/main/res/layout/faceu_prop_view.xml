@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="#99000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_centerVertical="true">
+
+        <LinearLayout
+            android:id="@+id/moreFaceUProp"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="13dp"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/moreFaceUPropImage"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:background="@drawable/download_more" />
+
+            <TextView
+                android:id="@+id/moreFaceUPropText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:text="@string/more"
+                android:textColor="#ffffffff"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/faceUPropList"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="1"
+            android:fadingEdgeLength="30dp"
+            android:requiresFadingEdge="horizontal" />
+    </LinearLayout>
+
+</RelativeLayout>

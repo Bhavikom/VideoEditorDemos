@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff242728"
+    android:orientation="vertical"
+    tools:context=".feedback.FeedBackActivity">
+
+    <com.meishe.sdkdemo.edit.view.CustomTitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="17dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="@dimen/dp13"
+        android:layout_marginTop="@dimen/dp20"
+        android:text="@string/feedbackContent"
+        android:textColor="#ffffffff"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="154dp"
+        android:layout_marginLeft="@dimen/dp15"
+        android:layout_marginRight="@dimen/dp15"
+        android:background="@drawable/activity_feedback_edit"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/feedback_editText"
+            style="@style/feedback_editText"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="top|left"
+            android:padding="5dp"
+            android:textColor="#cc000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/feedback_textSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="5dp"
+            android:gravity="top"
+            android:text="@string/zero_over_oneThousand"
+            android:textColor="#ffa8a2a2"
+            android:textSize="@dimen/sp12" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="@dimen/dp13"
+        android:layout_marginTop="@dimen/dp20"
+        android:text="@string/contactWay"
+        android:textColor="#ffffffff"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/feedback_editText_number"
+        style="@style/feedback_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp15"
+        android:layout_marginRight="@dimen/dp15"
+        android:background="@drawable/activity_feedback_edit"
+        android:padding="5dp"
+        android:textColor="#cc000000"
+        android:maxLines="1"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/feedback_commit"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/activity_feedback_button_background"
+        android:text="@string/submitFeedback"
+        android:textColor="#ffffffff"
+        android:textSize="12sp"
+        android:textAllCaps="false"/>
+
+    <TextView
+        android:layout_width="148dp"
+        android:layout_height="0dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="25dp"
+        android:layout_weight="1"
+        android:gravity="bottom|center_horizontal"
+        android:text="@string/businessCooperation"
+        android:textColor="#ffffffff"
+        android:textSize="12sp" />
+</LinearLayout>

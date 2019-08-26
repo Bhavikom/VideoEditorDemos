@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="40dp"
+    android:layout_height="40dp">
+
+    <ImageView
+        android:id="@+id/captionOutlineNoColor"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:padding="1.5dp"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/timeline_fx_no" />
+
+    <com.meishe.sdkdemo.edit.view.RoundColorView
+        android:id="@+id/captionOutlineColor"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_centerInParent="true" />
+
+    <View
+        android:id="@+id/selectedItem"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_border_caption_color_selected" />
+
+</RelativeLayout>

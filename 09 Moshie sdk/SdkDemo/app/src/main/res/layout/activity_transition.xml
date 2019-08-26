@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/msff242728"
+    android:orientation="vertical"
+    tools:context=".edit.transition.TransitionActivity">
+
+    <com.meishe.sdkdemo.edit.view.CustomTitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+         />
+
+    <RelativeLayout
+        android:id="@+id/video_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="213dp"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/thumbRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="14dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/download_more_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_marginLeft="13dp">
+
+                <ImageView
+                    android:id="@+id/dowanloadImage"
+                    android:layout_width="35dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="9dp"
+                    android:background="@drawable/download_more" />
+
+                <TextView
+                    android:id="@+id/dowanloadMoreText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dowanloadImage"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="23dp"
+                    android:text="@string/more"
+                    android:textColor="@color/ccffffff"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/transitionRecyclerView"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_marginLeft="40dp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/finishLayout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentTop="true"
+                android:background="#1AFFFFFF" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/finish" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

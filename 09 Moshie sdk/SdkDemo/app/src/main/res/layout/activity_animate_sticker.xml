@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.meishe.sdkdemo.edit.animatesticker.AnimateStickerActivity">
+
+    <com.meishe.sdkdemo.edit.view.CustomTitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+         />
+
+    <RelativeLayout
+        android:id="@+id/spaceLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RelativeLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="213dp"
+        android:background="#ff242728">
+
+        <LinearLayout
+            android:id="@+id/durationLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/zoomOut"
+                android:layout_width="20dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="2dp"
+                    android:layout_centerInParent="true"
+                    android:background="@mipmap/zoom_out" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/currentPlaytime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textColor="#ffffffff"
+                android:textSize="10sp" />
+
+            <RelativeLayout
+                android:id="@+id/zoomIn"
+                android:layout_width="20dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_centerInParent="true"
+                    android:background="@mipmap/zoom_in" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/sequenceLayout"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:layout_below="@+id/durationLayout">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/videoPlay"
+                    android:layout_width="18dp"
+                    android:layout_height="21dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@mipmap/icon_edit_play" />
+
+                <com.meishe.sdkdemo.edit.timelineEditor.NvsTimelineEditor
+                    android:id="@+id/timelineEditor"
+                    android:layout_width="0dp"
+                    android:layout_height="49dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/span" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/addAnimateStickerButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/sequenceLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/add" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/stickerFinish"
+            android:background="#1AFFFFFF" />
+
+        <ImageView
+            android:id="@+id/stickerFinish"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="15dp"
+            android:background="@mipmap/finish" />
+
+        <RelativeLayout
+            android:id="@+id/animateStickerAsset_layout"
+            android:layout_width="match_parent"
+            android:layout_height="213dp"
+            android:background="#ff242728"
+            android:visibility="gone">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="36.5dp"
+                android:background="#1AFFFFFF" />
+
+            <LinearLayout
+                android:id="@+id/tabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/moreDownload"
+                    android:layout_width="30dp"
+                    android:layout_height="21dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginRight="27dp"
+                    android:background="@drawable/download_more" />
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/animateStickerTypeTab"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    />
+            </LinearLayout>
+
+            <com.meishe.sdkdemo.edit.view.CustomViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_below="@+id/tabLayout"
+                android:layout_marginTop="21dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_above="@+id/stickerAssetFinish"
+                android:background="@color/white_10" />
+
+            <ImageView
+                android:id="@+id/stickerAssetFinish"
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="15dp"
+                android:background="@mipmap/finish" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

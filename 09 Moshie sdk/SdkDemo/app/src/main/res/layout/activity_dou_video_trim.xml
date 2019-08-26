@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.meishe.sdkdemo.douvideo.DouVideoTrimActivity">
+
+    <com.meishe.sdkdemo.edit.view.CustomTitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/spaceLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/videoPlayButton"
+            android:layout_width="28dp"
+            android:layout_height="33dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/douvideo_edit_play" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="213dp"
+        android:background="#ff242728">
+
+        <TextView
+            android:id="@+id/trimDurationVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="12dp"
+            android:textColor="#ffffffff"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:id="@+id/rotateClip"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="3dp"
+            android:padding="10dp"
+            android:src="@mipmap/douvideo_rotate" />
+
+        <com.meishe.sdkdemo.edit.timelineEditor.NvsTimelineEditor
+            android:id="@+id/timelineEditor"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_below="@+id/trimDurationVal"
+            android:layout_marginTop="12dp" />
+
+        <ImageView
+            android:id="@+id/trimFinish"
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:padding="10dp"
+            android:src="@mipmap/finish" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp77"
+    android:layout_height="105dp"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/main_fragment_recycle_iv"
+        android:layout_width="@dimen/dp77"
+        android:layout_height="@dimen/dp77"
+        android:scaleType="center" />
+
+    <TextView
+        android:id="@+id/main_fragment_recycle_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/ccffffff"
+        android:textSize="14sp" />
+</LinearLayout>

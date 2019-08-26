@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true">
+        <layer-list>
+            <item>
+                <shape android:dither="true" android:shape="oval">
+                    <solid android:color="@color/colorTranslucent" />
+                    <stroke android:width="6dp" android:color="#80fc3e3e" />
+                </shape>
+            </item>
+            <item android:bottom="12dp" android:left="12dp" android:right="12dp" android:state_checked="true" android:top="12dp">
+                <shape android:shape="oval">
+                    <solid android:color="#fffc3e3e" />
+                    <size android:width="52dp" android:height="52dp" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <!--未被选中的是2dp的底部边线-->
+    <item android:state_checked="false">
+        <layer-list>
+            <item>
+                <bitmap
+                    android:gravity="center"
+                    android:src="@drawable/capturescene_stoprecord"/>
+            </item>
+        </layer-list>
+    </item>
+
+</selector>

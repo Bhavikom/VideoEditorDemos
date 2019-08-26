@@ -1,0 +1,44 @@
+{
+  "record_fx": [
+    {
+      "name": "女声",
+      "builtin_fx_name": "Female Voice",
+      "rank": 0
+    },
+    {
+      "name": "礼堂",
+      "builtin_fx_name": "Fast Cartoon Voice",
+      "rank": 1
+    },
+    {
+      "name": "混响",
+      "builtin_fx_name": "Audio Reverb",
+      "rank": 2
+    },
+    {
+      "name": "电子",
+      "builtin_fx_name": "Audio Wahwah",
+      "rank": 3
+    },
+    {
+      "name": "男声",
+      "builtin_fx_name": "Male Voice",
+      "rank": 4
+    },
+    {
+      "name": "卡通",
+      "builtin_fx_name": "Cartoon Voice",
+      "rank": 5
+    },
+    {
+      "name": "回声",
+      "builtin_fx_name": "Audio Echo",
+      "rank": 6
+    },
+    {
+      "name": "怪兽",
+      "builtin_fx_name": "Monster Voice",
+      "rank": 7
+    }
+  ]
+}

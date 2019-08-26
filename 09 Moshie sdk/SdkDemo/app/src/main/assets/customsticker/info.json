@@ -1,0 +1,21 @@
+{
+	"fxInfoList":[
+		{
+			"name":"旋入",
+			"fxFileName":"5D9FA998-7600-492F-9DF4-BC2FA5E869BD.7.animatedsticker",
+			"fxPackageId":"5D9FA998-7600-492F-9DF4-BC2FA5E869BD",
+			"fxLicFileName":"5D9FA998-7600-492F-9DF4-BC2FA5E869BD.lic",
+			"imageName":"5D9FA998-7600-492F-9DF4-BC2FA5E869BD.png",
+			"fitRatio":"15"
+		},
+		{
+			"name":"间隔弹跳",
+			"fxFileName":"C035D48E-F820-4325-9B1B-5C8121EB8CB2.6.animatedsticker",
+			"fxPackageId":"C035D48E-F820-4325-9B1B-5C8121EB8CB2",
+			"fxLicFileName":"C035D48E-F820-4325-9B1B-5C8121EB8CB2.lic",
+			"imageName":"C035D48E-F820-4325-9B1B-5C8121EB8CB2.png",
+			"fitRatio":"15"
+		}
+	]
+}
+

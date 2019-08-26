@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#ff242728">
+
+        <com.meishe.sdkdemo.edit.view.CustomTitleBar
+            android:id="@+id/title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            >
+
+        </com.meishe.sdkdemo.edit.view.CustomTitleBar>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:id="@+id/video_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </RelativeLayout>
+
+            <com.meishe.sdkdemo.edit.view.VerticalSeekBar
+                android:id="@+id/record_volume_seekBar"
+                android:layout_width="20dp"
+                android:layout_height="180dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="13dp"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="213dp">
+
+            <RelativeLayout
+                android:id="@+id/control_layout"
+                android:layout_width="match_parent"
+                android:layout_height="34dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="horizontal">
+                    <RelativeLayout
+                        android:id="@+id/zoom_out_btn"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"
+                            android:layout_centerInParent="true"
+                            android:src="@mipmap/zoom_out" />
+
+                    </RelativeLayout>
+                    <TextView
+                        android:id="@+id/play_cur_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:text="@string/zeroZZZ"
+                        android:textColor="#ffffff"
+                        android:textSize="10sp" />
+                    <RelativeLayout
+                        android:id="@+id/zoom_in_btn"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"
+                            android:layout_centerInParent="true"
+                            android:src="@mipmap/zoom_in" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+                <Button
+                    android:id="@+id/recordFxButton"
+                    android:layout_width="45dp"
+                    android:layout_height="17dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="13dp"
+                    android:background="@drawable/shape_caption_style_corner_button"
+                    android:text="@string/soundEffect"
+                    android:textColor="#ffffffff"
+                    android:textSize="10sp"
+                    android:visibility="gone"
+                    android:textAllCaps="false"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/timeline_edit_layout"
+                android:layout_width="match_parent"
+                android:layout_height="63dp"
+                android:layout_below="@id/control_layout">
+
+                <com.meishe.sdkdemo.edit.record.SqLayout
+                    android:id="@+id/sq_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="49dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="48dp"
+                    android:layout_centerVertical="true"
+                    android:overScrollMode="never">
+
+                </com.meishe.sdkdemo.edit.record.SqLayout>
+
+                <RelativeLayout
+                    android:id="@+id/play_btn_layout"
+                    android:layout_width="48dp"
+                    android:layout_height="26dp"
+                    android:layout_centerVertical="true">
+
+                    <Button
+                        android:id="@+id/play_btn"
+                        android:layout_width="18dp"
+                        android:layout_height="21dp"
+                        android:background="@mipmap/icon_edit_play"
+                        android:layout_centerHorizontal="true" />
+
+                </RelativeLayout>
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/span"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/record_btn_layout"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/timeline_edit_layout"
+                android:layout_marginTop="15dp"
+                android:layout_centerHorizontal="true">
+
+                <Button
+                    android:id="@+id/record_begin_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/record_begin"/>
+
+                <Button
+                    android:id="@+id/record_stop_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/record_stop"
+                    android:visibility="gone"/>
+
+                <Button
+                    android:id="@+id/record_del_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/record_delete"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:background="#ff242728"
+                android:layout_alignParentBottom="true">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/white_10"/>
+
+                <Button
+                    android:id="@+id/ok_btn"
+                    android:layout_width="25dp"
+                    android:layout_height="20dp"
+                    android:background="@mipmap/finish"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/record_fx_layout"
+            android:layout_width="match_parent"
+            android:layout_height="213dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/record_fx_rv"
+                android:layout_width="match_parent"
+                android:layout_height="69dp"
+                android:overScrollMode="never"
+                android:layout_above="@+id/fx_bottom_layout"
+                android:layout_marginBottom="10dp">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <RelativeLayout
+                android:id="@+id/fx_bottom_layout"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:background="#ff242728"
+                android:layout_alignParentBottom="true">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/white_10"/>
+
+                <Button
+                    android:id="@+id/fx_ok_btn"
+                    android:layout_width="25dp"
+                    android:layout_height="20dp"
+                    android:background="@mipmap/finish"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

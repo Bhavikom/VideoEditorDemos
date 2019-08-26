@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/assetItem"
+    android:layout_width="85dp"
+    android:layout_height="85dp">
+    <ImageView
+        android:id="@+id/stickerAssetCover"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_centerInParent="true"/>
+    <View
+        android:id="@+id/selectedItem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="@drawable/shape_border_animatesticker_selected"/>
+    <ImageView
+        android:id="@+id/stickerPlayButton"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="36dp"
+        android:visibility="gone"/>
+</RelativeLayout>

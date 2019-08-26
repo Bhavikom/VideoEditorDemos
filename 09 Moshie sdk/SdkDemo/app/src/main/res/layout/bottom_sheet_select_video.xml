@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_start_edit"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@color/ff242728"
+    android:gravity="center"
+    android:text="@string/startMaking"
+    android:textColor="@color/ff4a90e2"
+    android:textSize="16sp">
+
+</TextView>

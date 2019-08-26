@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#4A90E2"
+        android:layout_centerVertical="true"/>
+
+    <View
+        android:id="@+id/indicator_view"
+        android:layout_width="2dp"
+        android:layout_height="7dp"
+        android:background="#D0021B"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"/>
+
+    <RelativeLayout
+        android:id="@+id/handle_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/leftHandle"
+            android:layout_width="10dp"
+            android:layout_height="20dp"
+            android:background="@drawable/music_seekbar">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/rightHandle"
+            android:layout_width="10dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/music_seekbar">
+        </ImageView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom_time_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/leftTime"
+            android:layout_width="10dp"
+            android:layout_height="20dp"
+            android:background="@drawable/music_seekbar">
+        </TextView>
+
+        <TextView
+            android:id="@+id/rightTime"
+            android:layout_width="10dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/music_seekbar">
+        </TextView>
+
+    </RelativeLayout>
+</RelativeLayout>

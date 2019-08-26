@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.meishe.sdkdemo.edit.clipEdit.photo.PhotoMovementActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.meishe.sdkdemo.edit.view.CustomTitleBar
+            android:id="@+id/title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            >
+
+        </com.meishe.sdkdemo.edit.view.CustomTitleBar>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#ff242728">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@+id/photoDisplay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitCenter" />
+
+                <com.meishe.sdkdemo.edit.view.PhotoDrawRect
+                    android:id="@+id/areaStartDrawROI"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <com.meishe.sdkdemo.edit.view.PhotoDrawRect
+                    android:id="@+id/areaEndDrawROI"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <com.meishe.sdkdemo.edit.view.PhotoDrawRect
+                    android:id="@+id/closeMoveDrawROI"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+                <com.meishe.sdkdemo.edit.view.PhotoDrawRect
+                    android:id="@+id/totalDrawROI"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bottomLayout"
+            android:layout_width="match_parent"
+            android:layout_height="213dp"
+            android:background="#ff242728">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                android:layout_marginTop="23dp">
+
+                <Button
+                    android:id="@+id/openMoveButton"
+                    android:layout_width="62dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="13dp"
+                    android:background="@mipmap/switch_on" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/openMoveButton"
+                    android:text="@string/picture_move"
+                    android:textColor="@color/ccffffff"
+                    android:textSize="@dimen/sp12" />
+
+                <Button
+                    android:id="@+id/photoSeekButton"
+                    android:layout_width="62dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="13dp"
+                    android:background="@drawable/shape_caption_style_corner_button"
+                    android:text="@string/preview"
+                    android:textColor="#ffffffff"
+                    android:textSize="12sp"
+                    android:textAllCaps="false"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="73dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="70dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/areaDisplayImg"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@mipmap/photo_area_display" />
+
+                    <View
+                        android:id="@+id/areaDisplay_Select"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/shape_border_photo_move_selected" />
+
+                    <TextView
+                        android:id="@+id/areaDisplayText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/areaDisplayImg"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="7dp"
+                        android:text="@string/area_display"
+                        android:textColor="@color/ccffffff"
+                        android:textSize="@dimen/sp12" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="54dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/totalDisplayImg"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@mipmap/photo_total_display" />
+
+                    <View
+                        android:id="@+id/totalDisplay_Select"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/shape_border_photo_move_selected"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/totalDisplayText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/totalDisplayImg"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="7dp"
+                        android:text="@string/total_display"
+                        android:textColor="@color/ccffffff"
+                        android:textSize="@dimen/sp12" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#1AFFFFFF"
+                android:layout_marginBottom="@dimen/dp10"
+                android:layout_above="@+id/movementFinish"/>
+
+            <ImageView
+                android:id="@+id/movementFinish"
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="15dp"
+                android:background="@mipmap/finish" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/seekPhotoVideoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="#99000000" />
+
+        <RelativeLayout
+            android:id="@+id/spaceLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="213dp"
+            android:background="#99000000">
+
+            <Button
+                android:id="@+id/cancelSeekButton"
+                android:layout_width="62dp"
+                android:layout_height="27dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="65dp"
+                android:background="@drawable/shape_caption_style_corner_button"
+                android:text="@string/play_end"
+                android:textColor="#ffffffff"
+                android:textSize="15sp"
+                android:textAllCaps="false"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

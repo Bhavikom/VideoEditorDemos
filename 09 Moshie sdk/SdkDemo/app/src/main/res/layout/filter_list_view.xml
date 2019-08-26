@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="154dp">
+
+    <LinearLayout
+        android:id="@+id/intensityLayout"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_alignParentTop="true"
+        android:background="#00000000"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <View
+            android:layout_width="13dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/intensityText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/intensity"
+            android:textColor="#ffffffff"
+            android:textSize="@dimen/sp12"
+            android:visibility="gone" />
+
+        <SeekBar
+            android:id="@+id/intensitySeekBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="13dp"
+            android:layout_weight="1"
+            android:maxHeight="2dp"
+            android:minHeight="2dp"
+            android:progressDrawable="@drawable/caption_size_seekbar"
+            android:thumb="@drawable/custom_voice_seekbar_ball" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/filterFxList"
+        android:layout_width="match_parent"
+        android:layout_height="123dp"
+        android:layout_below="@+id/intensityLayout"
+        android:background="#99000000"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/moreFilterButton"
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="18dp"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/moreFilerImage"
+                android:layout_width="35dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="13dp"
+                android:background="@drawable/download_more" />
+
+            <TextView
+                android:id="@+id/moreFilerText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="19dp"
+                android:text="@string/more"
+                android:textColor="#ffffffff"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/filterRecyclerList"
+            android:layout_width="0dp"
+            android:layout_height="72dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="18dp"
+            android:layout_weight="1"
+            android:fadingEdgeLength="30dp"
+            android:requiresFadingEdge="horizontal" />
+
+    </LinearLayout>
+</RelativeLayout>

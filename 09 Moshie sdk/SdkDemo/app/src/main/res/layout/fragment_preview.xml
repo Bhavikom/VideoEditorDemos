@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.meicam.sdk.NvsLiveWindow
+        android:id="@+id/liveWindow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/preview_image_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:background="@drawable/preview_start" />
+
+    <ImageView
+        android:id="@+id/preview_image_back"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="@dimen/dp20"
+        app:srcCompat="@mipmap/icon_close" />
+
+    <ImageView
+        android:id="@+id/preview_image_create"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@+id/preview_image_back"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="13dp"
+        app:srcCompat="@drawable/preview_import" />
+
+    <SeekBar
+        android:id="@+id/preview_seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:progressDrawable="@drawable/preview_seek_bar"
+        android:maxHeight="3dp"
+        android:minHeight="3dp"
+        android:paddingStart="0dp"
+        android:paddingEnd="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="75dp"
+        android:thumb="@drawable/preview_seekbar_ball" />
+    <RelativeLayout
+        android:id="@+id/compilePage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </RelativeLayout>
+</RelativeLayout>

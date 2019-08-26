@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/have_select_layout"
+    android:layout_width="match_parent"
+    android:layout_height="74dp"
+    android:background="@color/alpha60_black"
+    android:paddingStart="13dp"
+    android:paddingEnd="13dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:visibility="visible">
+
+    <ImageView
+        android:id="@+id/select_music_image"
+        android:layout_width="49dp"
+        android:layout_height="49dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/music_single_btn"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/select_music_image"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="-3dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/select_music_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="12sp"/>
+
+
+        <TextView
+            android:id="@+id/select_music_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/music_default_size"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:layout_marginLeft="2dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/select_no_use_music_btn"
+        android:layout_width="39dp"
+        android:layout_height="17dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/button_style_yellow_ellipse_shape"
+        android:text="@string/noneMusic"
+        android:textColor="@color/white"
+        android:textSize="10sp"/>
+
+    <RelativeLayout
+        android:id="@+id/select_music_cut_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/select_music_image"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="35dp">
+
+        <com.meishe.sdkdemo.edit.music.CutMusicView
+            android:id="@+id/select_music_cut_view"
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+
+        </com.meishe.sdkdemo.edit.music.CutMusicView>
+    </RelativeLayout>
+
+</RelativeLayout>

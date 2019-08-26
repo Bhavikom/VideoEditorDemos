@@ -1,0 +1,40 @@
+{
+  "fx": [
+    {
+      "name": "雪花",
+      "rank": 6,
+      "package_id": "E41B1BC6-23AC-4508-9C8A-F6430BB37C3F",
+      "aspect_ratio": 15
+    },
+    {
+      "name": "花瓣",
+      "rank": 0,
+      "package_id": "F845C51E-AFA0-44A5-B18A-87F7E1FA702F",
+      "aspect_ratio": 15
+    },
+    {
+      "name": "火焰",
+      "rank": 2,
+      "package_id": "E852D089-A47E-4079-870E-0FFFC11B66C9",
+      "aspect_ratio": 15
+    },
+    {
+      "name": "跳动的音符",
+      "rank": 3,
+      "package_id": "5CC2478F-9B88-4B49-83AA-D0C1C99BF84C",
+      "aspect_ratio": 15
+    },
+    {
+      "name": "花舞",
+      "rank": 0,
+      "package_id": "440DEFEF-D71D-48B1-88D9-02CDD4627AD6",
+      "aspect_ratio": 15
+    },
+    {
+      "name": "小心心",
+      "rank": 1,
+      "package_id": "C44D0609-BECF-4EB2-97BC-984DDA5E95BA",
+      "aspect_ratio": 15
+    }
+  ]
+}

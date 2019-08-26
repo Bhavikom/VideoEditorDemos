@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.meishe.sdkdemo.download.AssetListFragment">
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/asset_recyclerviewList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <LinearLayout
+        android:id="@+id/preloadingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:orientation="vertical">
+        <ProgressBar
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:indeterminateBehavior="repeat"
+            android:indeterminateDrawable="@drawable/progress_eight_petal_xml" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:text="@string/asset_loading"
+            android:textColor="#4d4f51"
+            android:textAlignment="center"
+            android:textSize="19sp"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/loadFailedLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/asset_loadfailed"
+            android:textColor="#ffd0021b"
+            android:textSize="19sp"
+            android:layout_gravity="center_horizontal"/>
+        <Button
+            android:id="@+id/reloadAsset"
+            android:layout_width="80dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="44dp"
+            android:background="#ff4a90e2"
+            android:text="@string/retry"
+            android:textColor="#ffffffff"
+            android:textSize="12sp"
+            android:layout_gravity="center_horizontal"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+</RelativeLayout>

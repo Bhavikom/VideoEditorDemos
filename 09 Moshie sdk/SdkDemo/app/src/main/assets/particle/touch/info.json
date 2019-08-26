@@ -1,0 +1,64 @@
+﻿{
+  "fx": [
+    {
+      "name": "霓虹灯",
+      "rank": 12,
+      "package_id": "34B095C8-628A-4E9D-B36D-093F9774DAF7",
+      "aspect_ratio": 15
+    },
+    {
+      "name": "金色闪烁",
+      "rank": 14,
+      "package_id": "641C5CDE-BF3E-478D-A4C6-B5D5FA3AA9AD",
+      "aspect_ratio": 15
+    },
+    {
+      "name": "三角",
+      "rank": 17,
+      "package_id": "DD46276A-CEC3-4454-A9D5-38CDB35BAC54",
+      "aspect_ratio": 15
+    },
+	{
+      "name": "蝴蝶",
+      "rank": 11,
+      "package_id": "2E41FBA4-BF82-4359-9A0A-F3491805FCD9",
+      "aspect_ratio": 15
+    },
+    {
+      "name": "金币",
+      "rank": 13,
+      "package_id": "94BF3A54-6A85-464A-B66C-045A0F9714AA",
+      "aspect_ratio": 15
+    },
+    {
+      "name": "五彩三角",
+      "rank": 19,
+      "package_id": "A7C28D2C-56D6-40D0-8F3E-C70B1870585D",
+      "aspect_ratio": 15
+    },
+    {
+      "name": "气泡",
+      "rank": 21,
+      "package_id": "D376733B-511F-4BFB-A973-A2B000F7CD81",
+      "aspect_ratio": 15
+    },
+    {
+      "name": "桃心",
+      "rank": 23,
+      "package_id": "CF7D68DD-B1AD-45B2-85EA-0A59E97D98C0",
+      "aspect_ratio": 15
+    },
+    {
+      "name": "跃动星光",
+      "rank": 24,
+      "package_id": "FAB6397B-73D9-4F39-AB26-9D1C44F3AA5C",
+      "aspect_ratio": 15
+    },
+    {
+      "name": "礼物",
+      "rank": 25,
+      "package_id": "3767C553-2A4B-4616-A153-D544604DA846",
+      "aspect_ratio": 15
+    }
+  ]
+}

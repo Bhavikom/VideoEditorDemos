@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fl_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_item_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bank_thumbnail_local" />
+
+    <TextView
+        android:id="@+id/tv_media_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="5dp"
+        android:gravity="center_vertical"
+        android:shadowColor="@color/ff000000"
+        android:drawableLeft="@mipmap/videocam_material"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="1"
+        android:textColor="@color/white"
+        android:textSize="9sp"
+        android:drawablePadding="3dp"
+        android:drawableStart="@mipmap/videocam_material" />
+
+    <RelativeLayout
+        android:id="@+id/item_media_hideLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="@color/ms994a90e2">
+
+        <!--中间选中的数字-->
+        <TextView
+            android:id="@+id/tv_selected_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text=""
+            android:textColor="@color/ffffffff"
+            android:textSize="21sp" />
+    </RelativeLayout>
+
+</FrameLayout>

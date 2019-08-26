@@ -1,0 +1,28 @@
+{	
+	"pipInfoList":[
+		 {
+			 "name":"上下",
+			 "fileDirName":"pip_updown",
+			 "pipPackageName1":"8650DD79-E638-4A5E-B8B1-437F335F09A0.videofx",
+			 "pipPackageName2":"4D285785-5777-4622-8469-25A1B155A9A3.videofx",
+			 "coverImageName":"pip_template1.png",
+			 "isBundle":"true"
+		 },
+		 {
+			 "name":"左右",
+			 "fileDirName":"pip_leftright",
+			 "pipPackageName1":"FCB9BB97-CEA2-4588-8997-C52BE2358D5E.videofx",
+			 "pipPackageName2":"39DA0799-01A5-44F6-958E-6C840715331E.videofx",
+			 "coverImageName":"pip_template2.png",
+			 "isBundle":"true"
+		 },
+		 {
+			 "name":"全屏左上",
+			 "fileDirName":"pip_sreenleftup",
+			 "pipPackageName1":"494BF150-2D7E-4851-A3AC-65F122B0927E.videofx",
+			 "pipPackageName2":"64EC065F-17AE-4881-99EB-854C265FE950.videofx",
+			 "coverImageName":"pip_template3.png",
+			 "isBundle":"true"
+		 }
+	]
+}

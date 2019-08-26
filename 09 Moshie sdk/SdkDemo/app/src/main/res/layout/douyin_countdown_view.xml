@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="190dp"
+    android:orientation="vertical"
+    android:background="#99000000">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/drag_select_pause_position"
+        android:textColor="#ffffffff"
+        android:textSize="11sp"
+        android:layout_marginTop="13dp"
+        android:layout_gravity="center_horizontal"/>
+    <com.meishe.sdkdemo.douvideo.view.CountDownDurationAdjustView
+        android:id="@+id/countDownCaptureView"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_marginTop="13dp">
+
+    </com.meishe.sdkdemo.douvideo.view.CountDownDurationAdjustView>
+    <Button
+        android:id="@+id/startCountDownCapture"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/start_countdown_capture_button_shape"
+        android:text="@string/start_countdown_shooting"
+        android:textColor="#ffffffff"
+        android:textSize="12sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="34dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        style="?android:attr/borderlessButtonStyle"
+        android:textAllCaps="false"/>
+
+</LinearLayout>

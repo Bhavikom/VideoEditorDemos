@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="ff242728">#242728</color>
+    <color name="dd000000">#dd000000</color>
+    <color name="ffffffff">#ffffffff</color>
+    <color name="ccffffff">#CCffffff</color>
+    <color name="ff000000">#000000</color>
+    <color name="alpha60_black">#66000000</color>
+    <color name="douyin_edit_background">#242728</color>
+    <!--<color name="colorSelItem">#3db5fe</color>-->
+    <!--<color name="colorUnSelItem">#e7f5ff</color>-->
+    <!--<color name="colorSelItemText">#ffffff</color>-->
+    <!--<color name="colorUnSelItemText">#67a5d2</color>-->
+
+    <color name="ff4a90e2">#4a90e2</color>
+    <color name="cc4a90e2">#CC4a90e2</color>
+    <color name="ms994a90e2">#994a90e2</color>
+    <!-- 编辑界面 -->
+    <color name="msff242728">#ff363738</color>
+    <color name="ms979797">#979797</color>
+    <color name="color_edit_buttomlayout">#ff242728</color>
+
+    <color name="unsel_white">#999cb0</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="colorTranslucent">#00000000</color>
+    <color name="color60PercentWhite">#99ffffff</color>
+    <color name="colorThumbnailBorder">#FFD500</color>
+    <color name="colorThumbViewSelected">#FFD500</color>
+    <color name="colorThumbViewUnSelected">#59502b</color>
+    <color name="fx_un_select">#ff4d4f51</color>
+    <color name="fx_select">#994a90e2</color>
+    <color name="ms_blue">#4a90e2</color>
+    <color name="nv_colorTranslucent">#00000000</color>
+    <color name="ms_gray">#4D4F51</color>
+    <color name="ms_red">#D0021B</color>
+    <color name="dy_yellow">#F8E71C</color>
+    <color name="dy_text_after_music_seleeted">#B3FFFFFF</color>
+    <color name="color_fx_select">#B352D3FF</color>
+    <color name="blue">#CC3DB5FE</color>
+    <color name="white_half" >#999999</color>
+    <color name="white_10">#19ffffff</color>
+    <color name="white_20">#33ffffff</color>
+    <color name="ms_disable_color" >#4D4F51</color>
+    <color name="ms_colorImageSelect">#52D3FF</color>
+    <color name="menu_selected">#4A90E2</color>
+
+    <color name="cs_textColor_recording">#ffd0021b</color>
+    <color name="selcet_bg_blue">#7F4A90E2</color>
+
+    <color name="douyin_speed_color">#4d000000</color>
+    <color name="douyin_speed_select_color">#ffd8d8d8</color>
+    <color name="douyin_speed_text_color">#ffeaebeb</color>
+    <color name="douyin_speed_text_select_color">#ff4d4f51</color>
+    <!-- 统一规范 -->
+    <color name="title_center_text_color">#ccffffff</color>
+</resources>

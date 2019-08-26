@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 底层下滑条的样式选择器，可控制Switch在不同状态下，底下下滑条的颜色 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true">
+        <shape android:shape="rectangle">
+            <size android:width="28dp" android:height="15dp" />
+            <corners android:radius="360dp" />
+            <gradient android:endColor="#4A90E2" android:startColor="#4A90E2" />
+        </shape>
+    </item>
+
+    <item>
+        <shape android:shape="rectangle">
+            <size android:width="28dp" android:height="@dimen/dp15" />
+            <corners android:radius="360dp" />
+            <gradient android:endColor="#80979797" android:startColor="#80979797" />
+        </shape>
+    </item>
+</selector>

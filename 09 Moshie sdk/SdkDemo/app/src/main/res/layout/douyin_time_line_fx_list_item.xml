@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/colorTranslucent"
+    android:gravity="center_horizontal">
+
+    <FrameLayout
+        android:layout_width="49dp"
+        android:layout_height="49dp"
+        android:layout_gravity="center"
+        android:background="@color/nv_colorTranslucent">
+
+        <View
+            android:id="@+id/maskView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_radius_100">
+        </View>
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:contentDescription="@null"/>
+
+        <ProgressBar
+            android:id="@+id/wait_progress_bar"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:indeterminateDrawable="@drawable/douvideo_loading"
+            android:indeterminateBehavior="repeat"
+            android:layout_gravity="center"
+            android:visibility="invisible"/>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:gravity="center"
+        android:textSize="11sp"
+        android:textColor="@color/unsel_white"/>
+
+</LinearLayout>

@@ -1,0 +1,123 @@
+apply plugin: 'com.android.application'
+
+def extraLibPath = meisheSdkExtraPath(rootDir)
+
+android {
+    compileSdkVersion 28
+    //buildToolsVersion '28.0.3'
+
+    defaultConfig {
+        applicationId "com.meishe.videoshow"
+        minSdkVersion 16
+        targetSdkVersion 28
+        versionCode 12
+        versionName "2.10.1"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk {
+            abiFilters "armeabi-v7a"  // 指定要ndk需要兼容的架构(这样其他依赖包里mips,x86,armeabi,arm-v8之类的so会被过滤掉)
+        }
+        flavorDimensions "versionCode"
+    }
+
+    task libCopy(type: Copy) {
+        copy {
+            from extraLibPath+'lib/android_armv7'
+            into 'src/main/jniLibs/armeabi-v7a'
+            include '*.so'
+        }
+    }
+
+    repositories {
+        flatDir {
+            dirs './libs', '../../../../extrasdk', extraLibPath+'extrasdk/sdk/android'
+        }
+    }
+    productFlavors {
+        _360 {}
+        tencent {}
+        baidu {}
+        oppo {}
+        vivo {}
+        huawei {}
+        xiaomi {}
+        googleplay {}
+    }
+    productFlavors.all {
+            //批量修改，类似一个循序遍历
+        flavor -> flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
+    }
+    //对生成的apk进行一些简单的配置
+    applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            def buildName = "com.meishe"
+            def type = variant.buildType.name
+            if (type == "debug") {
+                def releaseApkName = 'app-debug.apk'
+                outputFileName = new File("../.././../../../build/outputs/apk/debug", releaseApkName)
+            } else {
+                def releaseApkName = buildName + '_' + variant.productFlavors.get(0).name + '_' + type + "_" + versionName + '_' + releaseTime() + '.apk'
+                outputFileName = releaseApkName
+            }
+        }
+    }
+}
+
+static def releaseTime() {
+    return new Date().format("yyyy-MM-dd--HH-mm-ss", TimeZone.getTimeZone("GMT+8"))
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation files('libs/NvAndroidStreamingSdk.jar')
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    //implementation 'com.android.support:support-compat:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:2.0.0-beta2'
+    implementation 'com.google.code.gson:gson:2.8.2'
+    implementation 'com.squareup.okhttp3:okhttp:3.2.0'
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+    annotationProcessor "com.github.bumptech.glide:compiler:4.8.0"
+    implementation 'jp.co.cyberagent.android:gpuimage:2.0.3'
+    implementation 'com.google.android.exoplayer:exoplayer:r2.5.2'
+    implementation 'com.android.support:design:28.0.0'
+    //implementation files('libs/android_jar/NvAndroidStreamingSdk.jar')
+    implementation files('libs/umeng-analytics-7.5.4.jar')
+    compile(name:'cafconvertor', ext:'aar')
+    compile(name:'nvconvertorlib', ext:'aar')
+    compile(name:'STMobileJNI', ext:'aar')
+}
+
+def meisheSdkExtraPath(File rootDir) {
+    String defaultPath = "../../../../"
+    try {
+        File confFile = new File(rootDir.getAbsolutePath() + "/../../../meishesdk_libpath.conf")
+        if (!confFile.exists()) {
+            if (confFile.createNewFile()) {
+                FileOutputStream outputStream = new FileOutputStream(confFile)
+                outputStream.write(defaultPath.getBytes())
+                outputStream.close()
+                return defaultPath
+            }
+        }
+        BufferedReader br = new BufferedReader(new FileReader(confFile))
+        String readline = ""
+        StringBuffer sb = new StringBuffer()
+        while ((readline = br.readLine()) != null) {
+            sb.append(readline)
+        }
+        br.close()
+        String pathTmp = sb.toString()
+        pathTmp = pathTmp.replace("\\", "/")
+        if (!pathTmp.endsWith("/")) {
+            pathTmp += "/"
+        }
+        if (pathTmp == null || pathTmp.isEmpty()) {
+            pathTmp = defaultPath
+        }
+        print("sdk path:" + pathTmp)
+        return pathTmp
+    } catch (Exception e) {
+        e.printStackTrace()
+    }
+    return defaultPath
+}

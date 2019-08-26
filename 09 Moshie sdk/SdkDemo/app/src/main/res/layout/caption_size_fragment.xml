@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="21dp"
+        android:layout_marginLeft="13dp"
+        android:layout_centerVertical="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/size"
+            android:textColor="@color/ccffffff"
+            android:textSize="@dimen/sp12" />
+        <SeekBar
+            android:id="@+id/captonSizeSeekBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:maxHeight="2dp"
+            android:minHeight="2dp"
+            android:progressDrawable="@drawable/caption_size_seekbar"
+            android:thumb="@drawable/custom_voice_seekbar_ball">
+        </SeekBar>
+        <TextView
+            android:id="@+id/seekBarValue"
+            android:layout_width="27dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="13dp"
+            android:text="@string/int0"
+            android:textColor="@color/ccffffff"
+            android:textSize="@dimen/sp12" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/applyToAll"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="13dp"
+        android:layout_alignParentBottom="true">
+        <ImageView
+            android:id="@+id/applyToAllImage"
+            android:layout_width="15dp"
+            android:layout_height="15dp" />
+        <TextView
+            android:id="@+id/applyToAllText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:text="@string/apply_to_all"
+            android:textColor="#ff909293"
+            android:textSize="10sp"/>
+    </LinearLayout>
+</RelativeLayout>

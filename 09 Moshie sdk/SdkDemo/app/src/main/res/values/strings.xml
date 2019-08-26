@@ -1,0 +1,506 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="app_name">美摄</string>
+    //////////////////////MainPage///////////////////////////////////
+    <string name="douYinEffects">抖视频</string>
+    <string name="particleEffects">粒子特效</string>
+    <string name="captureScene">背景抠像</string>
+    <string name="picInPic">画中画</string>
+    <string name="flipSubtitles">翻转字幕</string>
+    <string name="musicLyrics">音乐唱词</string>
+    <string name="pushMirrorFilm">推镜拍摄</string>
+    <string name="boomRang">Boomerang</string>
+    <string name="makingCover">封面制作</string>
+    <string name="initArsence">人脸初始化正在进行，请稍后</string>
+    <string name="no_back_activity_cancel">取消</string>
+    <string name="no_back_activity_setting">设置</string>
+    <string name="no_back_activity_message">“不保留活动”选项开启，导致功能无法正常使用。请点击“设置”，在“开发者选项”中关闭“不保留活动”。</string>
+    <string-array name="main_fragment_item">
+        <item>@string/douYinEffects</item>
+        <item>@string/particleEffects</item>
+        <item>@string/captureScene</item>
+        <item>@string/picInPic</item>
+        <item>@string/flipSubtitles</item>
+        <item>@string/musicLyrics</item>
+        <item>@string/pushMirrorFilm</item>
+        <item>@string/boomRang</item>
+        <item>@string/makingCover</item>
+    </string-array>
+
+    <string-array name="main_fragment_background">
+        <item>"main_fragment1_item1_background"</item>
+        <item>"main_fragment1_item2_background"</item>
+        <item>"main_fragment1_item3_background"</item>
+        <item>"main_fragment1_item4_background"</item>
+        <item>"main_fragment2_item1_background"</item>
+        <item>"main_fragment2_item2_background"</item>
+        <item>"main_fragment2_item3_background"</item>
+        <item>"main_fragment2_item4_background"</item>
+        <item>"main_fragment3_item1_background"</item>
+    </string-array>
+
+    <string-array name="main_fragment_image">
+        <item>"main_fragment1_item1_image"</item>
+        <item>"main_fragment1_item2_image"</item>
+        <item>"main_fragment1_item3_image"</item>
+        <item>"main_fragment1_item4_image"</item>
+        <item>"main_fragment2_item1_image"</item>
+        <item>"main_fragment2_item2_image"</item>
+        <item>"main_fragment2_item3_image"</item>
+        <item>"main_fragment2_item4_image"</item>
+        <item>"main_fragment3_item1_image"</item>
+    </string-array>
+
+    <string name="versionNumber">Meishe SDK %1$s</string>
+    <string name="videoCapture">视频拍摄</string>
+    <string name="videoEditName">视频编辑</string>
+
+    //////////////////////Setting//////////////////////////////////
+    <string name="setting">设置</string>
+    <string name="captureSetting">拍摄设置</string>
+    <string name="captureResolution">拍摄分辨率</string>
+    <string name="int1080">1080</string>
+    <string name="int720">720</string>
+    <string name="int540">540</string>
+    <string name="outputSetting">输出设置</string>
+    <string name="outputResolution">输出分辨率</string>
+    <string name="k4k">4K</string>
+    <string name="bitrate">码率</string>
+    <string-array name="settingSuggest">
+        <item>建议45Mbps，最大180Mbps</item>
+        <item>建议15Mbps，最大60Mbps</item>
+        <item>建议7Mbps，最大30Mbps</item>
+        <item>建议3Mbps，最大15Mbps</item>
+    </string-array>
+    <string name="mbps">Mbps</string>
+    <string name="disable_hardware_encoder">禁用硬件编码器</string>
+    <string name="others">其他</string>
+    <string name="background_blur_fill">背景模糊填充</string>
+    <string name="input_error">输入的数据有误，请重新输入</string>
+
+    //////////////////////FeedBack////////////////////////////////
+    <string name="feedback">反馈</string>
+    <string name="feedback_hint_text">请描述您想反馈的问题内容</string>
+    <string name="feedback_hint_number">留下能帮助我们更好的解决问题哦～</string>
+    <string name="feedback_tip1">反馈内容不能为空</string>
+    <string name="feedback_tip2">联系方式不能为空</string>
+    <string name="feedback_tip3">提交成功</string>
+    <string name="feedback_tip4">提交失败</string>
+    <string name="feedbackContent">反馈内容</string>
+    <string name="zero_over_oneThousand">0/1000</string>
+    <string name="contactWay">联系方式（手机，微信号，QQ号）</string>
+    <string name="submitFeedback">提交反馈</string>
+    <string name="businessCooperation">商务合作 \nTel:010-82851890 \nMail:meishe_sdk@cdv.com</string>
+
+    //////////////////////VideoCapture//////////////////////////////////
+    <string name="photo">单张</string>
+    <string name="video">视频</string>
+    <string name="zoom">变焦</string>
+    <string name="switch_camera">切换</string>
+    <string name="picture_zoom">画面变焦</string>
+    <string name="exposure_compensation">曝光补偿</string>
+    <string name="exposure">曝光</string>
+    <string name="sharpen_open">· 锐度开启</string>
+    <string name="sharpen_close">· 锐度关闭</string>
+    <string name="default_beauty_close">· 美颜滤镜关闭</string>
+    <string name="default_beauty_open">· 美颜滤镜开启</string>
+    <string name="beauty_close">美颜关闭</string>
+    <string name="beauty_open">美颜开启</string>
+    <string name="beauty_shape_close">美型关闭</string>
+    <string name="beauty_shape_open">美型开启</string>
+    <string name="beauty">美颜</string>
+    <string name="facetype">美型</string>
+    <string name="strength">磨皮</string>
+    <string name="whitening">美白</string>
+    <string name="whitening_A">美白A</string>
+    <string name="whitening_B">美白B</string>
+    <string name="ruddy">红润</string>
+    <string name="zeroZZZ">00:00</string>
+    <string name="whiteningA">· 美白A</string>
+    <string name="whiteningB">· 美白B</string>
+    <string name="more">更多</string>
+
+    <string name="cheek_thinning">瘦脸</string>
+    <string name="eye_enlarging">大眼</string>
+    <string name="intensity_forehead">额头</string>
+    <string name="intensity_chin">下巴</string>
+    <string name="intensity_nose">瘦鼻</string>
+    <string name="intensity_mouth">嘴型</string>
+    <string name="face_small">小脸</string>
+    <string name="face_thin">窄脸</string>
+    <string name="nose_long">长鼻</string>
+    <string name="eye_corner">眼角</string>
+    <string name="mouse_corner">嘴角</string>
+
+    //////////////////////Selectvideo//////////////////////////////////
+    <string-array name="select_media">
+        <item>所有内容</item>
+        <item>视频</item>
+        <item>图片</item>
+    </string-array>
+    <string name="selectMedia">选中内容</string>
+    <string name="setSelectMedia">已选%1$d项</string>
+    <string name="select_two_video">选择2个素材进行制作</string>
+    <string name="select_the_second_video">选择第2个素材</string>
+    <string name="prompt">提示</string>
+    <array name="select_video_tips">
+        <item>@string/prompt</item>
+        <item>请选择2个素材</item>
+    </array>
+    <string name="startMaking">开始制作</string>
+    <string name="checkAll">全选</string>
+    <string name="cancelCheckAll">取消全选</string>
+    <string name="date">日期</string>
+    <string name="yearMonthDate">yyyy-MM-dd</string>
+    <string name="today">今天</string>
+    <string name="single_select_picture">选择图片</string>
+    <string name="select_video">选择视频</string>
+
+    <string name="select_production_proportion">选择制作比例</string>
+    <string name="sixteenTNine">16:9</string>
+    <string name="nineTSixteen">9:16</string>
+    <string name="fourTThree">4:3</string>
+    <string name="threeTFour">3:4</string>
+    <string name="oneTone">1:1</string>
+
+    //////////////////////VideoEdit//////////////////////////////////
+    <string name="videoEdit">视频编辑</string>
+    <string name="compile">生成</string>
+    <string name="theme">主题</string>
+    <string name="edit">编辑</string>
+    <string name="filter">滤镜</string>
+    <string name="animatedSticker">贴纸</string>
+    <string name="caption">字幕</string>
+    <string name="comcaption">组合字幕</string>
+    <string name="watermark">水印</string>
+    <string name="transition">转场</string>
+    <string name="music">音乐</string>
+    <string name="dub">配音</string>
+    <string-array name="videoEdit">
+        <item>@string/theme</item>
+        <item>@string/edit</item>
+        <item>@string/filter</item>
+        <item>@string/animatedSticker</item>
+        <item>@string/caption</item>
+        <item>@string/comcaption</item>
+        <item>@string/watermark</item>
+        <item>@string/transition</item>
+        <item>@string/music</item>
+        <item>@string/dub</item>
+    </string-array>
+
+    <string name="stayTuned">敬请期待！</string>
+    <string name="contactBusiness">可移步官网联系商务人员</string>
+    <string-array name="edit_function_tips">
+        <item>@string/prompt</item>
+        <item>@string/stayTuned</item>
+        <item>@string/contactBusiness</item>
+    </string-array>
+    <string name="originalSound">原声</string>
+    <string-array name="transition_tips">
+        <item>@string/prompt</item>
+        <item>两个以上素材可添加转场</item>
+    </string-array>
+    <string-array name="compile_video_failed_tips">
+        <item>生成失败</item>
+        <item>请检查手机存储空间</item>
+    </string-array>
+    <string-array name="compile_video_success_tips">
+        <item>保存路径: </item>
+    </string-array>
+    <string name="int50">50</string>
+    <string name="int0">0</string>
+
+    //////////////////////Theme//////////////////////////////////
+    <string name="theme_tip">片头处暂停可以修改文字</string>
+    <string name="theme_title">美摄-记录美好生活</string>
+    //////////////////////videoClipEdit////////////////////////////////
+    <string name="trim">裁剪</string>
+    <string name="split">分割</string>
+    <string name="correctionColor">校色</string>
+    <string name="adjust">调整</string>
+    <string name="speed">速度</string>
+    <string name="volume">音量</string>
+    <string name="copy">复制</string>
+    <string name="delete">删除</string>
+    <string-array name="effectNamesVideo">
+        <item>@string/trim</item>
+        <item>@string/split</item>
+        <item>@string/correctionColor</item>
+        <item>@string/adjust</item>
+        <item>@string/speed</item>
+        <item>@string/volume</item>
+        <item>@string/copy</item>
+        <item>@string/delete</item>
+    </string-array>
+
+    <array name="video_delete_tips">
+        <item>@string/prompt</item>
+        <item>至少保留一个素材</item>
+    </array>
+
+    <string name="duration">时长</string>
+    <string name="movement">运动</string>
+    <string-array name="effectNamesImage">
+        <item>@string/duration</item>
+        <item>@string/movement</item>
+        <item>@string/correctionColor</item>
+        <item>@string/copy</item>
+        <item>@string/delete</item>
+    </string-array>
+
+    <string name="trim_duration">裁剪后总时长为</string>
+    <array name="spilt_video_tips">
+        <item>@string/prompt</item>
+        <item>不可分割小于1秒的素材</item>
+    </array>
+
+    <string name="brightness">亮度</string>
+    <string name="contrast">对比度</string>
+    <string name="saturation">饱和度</string>
+    <string name="degree">暗角</string>
+    <string name="sharpness">锐度</string>
+
+    <string name="horizontal">水平</string>
+    <string name="vertical">垂直</string>
+    <string name="rotate">旋转</string>
+    <string name="clip_reset">复位</string>
+
+    <string name="change_speed">按住滑块调整速度</string>
+    <string name="change_duration">拖动滑块调整时长</string>
+    <string name="picture_move">画面运动</string>
+    <string name="area_display">区域显示</string>
+    <string name="total_display">全图显示</string>
+    <string name="start_rect">开始画面</string>
+    <string name="end_rect">结束画面</string>
+    <string name="play_end">结束</string>
+
+    <string name="one_eighthX">1/8x</string>
+    <string name="quarterX">1/4x</string>
+    <string name="halfX">1/2x</string>
+    <string name="oneX">1x</string>
+    <string name="twoX">2x</string>
+    <string name="fourX">4x</string>
+    <string name="tenS">10s</string>
+
+    //////////////////////Filter////////////////////////////////
+    <string name="intensity">强度</string>
+
+    //////////////////////AnimatedSticker/////////////////////////
+    <string-array name="animatedSticker_type">
+        <item>全部</item>
+        <item>自定义</item>
+    </string-array>
+    <string name="add">添加</string>
+    <string name="free">自由</string>
+    <string name="circle">圆形</string>
+    <string name="square">正方</string>
+    <string name="select_content">选择内容</string>
+    <string name="customStickerselecteffect">选择动效</string>
+
+    //////////////////////Caption//////////////////////////////////
+    <string name="style">样式</string>
+    <string-array name="captionEdit">
+        <item>样式</item>
+        <item>颜色</item>
+        <item>描边</item>
+        <item>字体</item>
+        <!--<item>大小</item>-->
+        <item>位置</item>
+    </string-array>
+    <string name="outline_width">宽度</string>
+    <string name="size">0</string>
+    <string name="opacity">不透明度</string>
+    <string name="bold">加粗</string>
+    <string name="italic">斜体</string>
+    <string name="shadow">阴影</string>
+    <string name="apply_to_all">将样式应用到所有字幕</string>
+    <string name="inputSubtitle">请输入字幕：</string>
+    <string name="confirm">确认</string>
+    <string name="cancel">取消</string>
+    <string name="check_network">请检查网络！</string>
+    <string name="download_failed">下载失败！</string>
+
+    //////////////////////CompoundCaption/////////////////////////////
+    <string name="modify">修改</string>
+    <string name="compoundcaption">组合字幕</string>
+
+    //////////////////////WaterMark//////////////////////////////////
+    <string-array name="select_water">
+        <item>静态</item>
+        <item>动态</item>
+    </string-array>
+
+    //////////////////////Music////////////////////////////////
+    <string name="select_music">选择音乐</string>
+    <string name="singlePieceMusic">单段音乐</string>
+    <string name="morePieceMusic">多段音乐</string>
+    <string name="noneMusic">无音乐</string>
+    <string name="localMusic">本地音乐</string>
+    <string name="myMusic">我的音乐</string>
+    <array name="music_fragment_title">
+        <item>@string/localMusic</item>
+        <item>@string/myMusic</item>
+    </array>
+    <string name="use">使用</string>
+    <string name="music_default_size">00:00/00:10</string>
+    <string name="fadeIn_fadeOut">淡入淡出</string>
+    <string name="play_error">播放异常</string>
+
+    //////////////////////Dubbing//////////////////////////////
+    <string name="soundEffect">声效</string>
+    <string-array name="effect_list">
+        <item>无</item>
+        <item>女声</item>
+        <item>礼堂</item>
+        <item>混响</item>
+        <item>电子</item>
+        <item>男声</item>
+        <item>卡通</item>
+        <item>回声</item>
+        <item>怪兽</item>
+    </string-array>
+
+    //////////////////////Download////////////////////////////////
+    <string name="moreTheme">更多主题</string>
+    <string name="moreFilter">更多滤镜</string>
+    <string name="moreAnimatedSticker">更多贴纸</string>
+    <string name="moreCaptionStyle">更多字幕样式</string>
+    <string name="moreTransition">更多转场</string>
+    <string name="moreFaceU">更多人脸道具</string>
+    <string name="moreCustomStickerEffect">更多自定义效果</string>
+    <string name="moreCompoundCaptionStyle">更多组合字幕样式</string>
+
+    <string name="asset_loading">加载中…</string>
+    <string name="asset_loadfailed">加载失败!</string>
+    <string name="retry">重试</string>
+    <string name="asset_ratio">通用</string>
+    <string name="asset_mismatch">不适配</string>
+    <string name="asset_download">下载</string>
+    <string name="asset_downloadfinished">已完成</string>
+    <string name="asset_update">更新</string>
+    <string name="loading">正在加载...</string>
+    <string name="network_strayed_try">网络开小差了，请重试</string>
+
+    //////////////////////DouYin////////////////////////////////
+    <string name="beautify">美化</string>
+    <string name="timer">倒计时</string>
+    <string name="faceU">道具</string>
+    <string name="speed_super_slow">极慢</string>
+    <string name="speed_slow">慢</string>
+    <string name="speed_standard">标准</string>
+    <string name="speed_fast">快</string>
+    <string name="speed_super_fast">极快</string>
+    <string name="photoalbum">相册</string>
+    <string name="zeroS">0s</string>
+    <string name="fifteenS">15s</string>
+    <string name="drag_select_pause_position">拖动选择拍摄暂停位置</string>
+    <string name="start_countdown_shooting">开始倒计时拍摄</string>
+    <string name="douyin_recorder_maxduration_tips">拍满了，请删除一段视频再拍</string>
+    <string-array name="douyin_recorder_minduration_tips">
+        <item>@string/prompt</item>
+        <item>单次录制时长不能低于0.5秒</item>
+    </string-array>
+    <string-array name="sdk_version_tips">
+        <item>@string/prompt</item>
+        <item>请移步官网，联系商务人员索要有人脸识别授权的版本</item>
+    </string-array>
+    <string-array name="sdk_expire_tips">
+        <item>@string/prompt</item>
+        <item>人脸初始化失败</item>
+    </string-array>
+    <string-array name="permissions_tips">
+        <item>@string/prompt</item>
+        <item>请打开相关权限（摄像头，麦克风，存储)</item>
+    </string-array>
+    <string-array name="clip_load_failed_tips">
+        <item>@string/prompt</item>
+        <item>导入视频无效，请重新选择</item>
+    </string-array>
+    <string-array name="douyin_return_tips">
+        <item>放弃特效?</item>
+        <item>放弃</item>
+        <item>取消</item>
+    </string-array>
+
+    <string-array name="select_video_min_duration_tips">
+        <item>@string/prompt</item>
+        <item>请选择长于3秒的视频素材</item>
+    </string-array>
+    <string name="timeline_fx">时间特效</string>
+    <string name="filter_fx">滤镜特效</string>
+    <string name="filter_fx_tip">选择位置后，长按使用特效</string>
+    <string name="timeline_fx_tip">点击选择时间特效</string>
+
+    <string name="timeline_fx_none">无</string>
+    <string name="timeline_fx_repeat">反复</string>
+    <string name="timeline_fx_slow_motion">慢动作</string>
+    <string name="timeline_fx_reverse">倒放</string>
+
+    //////////////////////PicInPic////////////////////////////////
+    <string name="picInPicEdit">画中画编辑</string>
+    <string name="template">模板</string>
+    <string name="preview">预览</string>
+
+    //////////////////////Particle////////////////////////////////
+    <string name="particle">粒子</string>
+    <string name="graffiti">涂鸦</string>
+    <string name="capture_face">人脸</string>
+    <string name="capture_hand">手势</string>
+    <string name="particle_num">数量</string>
+    <string name="particle_size">大小</string>
+    <string name="tipsHand">做出“1”手势，查看手势跟随效果</string>
+    <string name="tipsEye">请眨眼，查看眼部粒子效果</string>
+    <string name="tipsMouth">请张嘴，体验粒子效果</string>
+
+    <string name="selectingPosition_paintPicture">选择位置后，在画面上涂画</string>
+    <string name="unselect_video">没有选择视频</string>
+
+    <string name="particle_stmobile_init_fail_tip">人脸手势初始化失败</string>
+
+    //////////////////////CaptureScene////////////////////////////////
+    <string name="flash_cs">补光</string>
+    <string name="background_cs">背景</string>
+    <string name="tips_cs">点选要去除的画面颜色，再选择一个场景</string>
+    <string name="single_color_recommended">建议拍摄背景为单一颜色</string>
+    <string name="noRemind">不再提醒</string>
+    <string name="reset">重置</string>
+
+    //////////////////////FlipCaption//////////////////////////////////
+    <string name="flipCaption">翻转字幕</string>
+    <string name="color">颜色</string>
+    <string name="font">字体</string>
+    <string name="caption_edit">编辑字幕</string>
+
+    //////////////////////MusicLyrics//////////////////////////////////
+    <string name="musicCaption">歌词字幕</string>
+
+    //////////////////////Common Part////////////////////////////////
+    <string name="i_know">知道了</string>
+
+    //BoomRangPreviewActivity
+    <string name="generating">生成中…</string>
+    <string name="completedTips">已完成\n请在相册中查看</string>
+
+    //////////////////////SuperZoomActivity////////////////////////////////
+    <string name="versionBelowTip">该模块在Android 4.3 以上查看</string>
+    <string name="super_zoom_cartoon">卡通</string>
+    <string name="super_zoom_daily">日报</string>
+    <string name="super_zoom_Dogpacks">狗仔队</string>
+    <string name="super_zoom_dramatization">戏剧化</string>
+    <string name="super_zoom_fire">火焰</string>
+    <string name="super_zoom_horror">惊悚</string>
+    <string name="super_zoom_love">爱心</string>
+    <string name="super_zoom_no">拒绝</string>
+    <string name="super_zoom_rhythm">律动</string>
+    <string name="super_zoom_rotate">旋转</string>
+    <string name="super_zoom_shake">抖动</string>
+    <string name="super_zoom_spring">弹跳</string>
+    <string name="super_zoom_tragedy">凉凉</string>
+    <string name="super_zoom_TV">电视节目</string>
+    <string name="super_zoom_wasted">结束</string>
+    <string-array name="super_zoom_resouce_tips">
+        <item>@string/prompt</item>
+        <item>该推镜特效未下载，请先下载</item>
+    </string-array>
+
+</resources>

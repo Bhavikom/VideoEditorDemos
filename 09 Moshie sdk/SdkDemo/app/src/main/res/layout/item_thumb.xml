@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/assetItem"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layoutAsset"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:paddingRight="5dp"
+        android:orientation="horizontal">
+
+        <com.meishe.sdkdemo.edit.view.RoundImageView
+            android:id="@+id/imageThumbView"
+            android:layout_width="87dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/fx_item_radius_shape_unselect"
+            android:scaleType="centerCrop"
+            app:x_radius="3dp"
+            app:y_radius="3dp"/>
+
+        <ImageView
+            android:id="@+id/imageTransition"
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:background="@drawable/fx_item_radius_shape_unselect2"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:padding="2dp"/>
+    </LinearLayout>
+
+</LinearLayout>
