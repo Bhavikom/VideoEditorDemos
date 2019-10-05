@@ -1,0 +1,96 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFA500"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFA500"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/id_cameralist_camerafulllayer"
+            style="@style/main_item_reletivelayout">
+
+            <TextView
+                style="@style/main_item_textview"
+                android:text="Vertical screen full screen recording" />
+
+            <TextView style="@style/main_item_arrow" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/id_cameralist_camerafulllayer2"
+            style="@style/main_item_reletivelayout">
+
+            <TextView
+                style="@style/main_item_textview"
+                android:text="Horizontal screen full screen recording" />
+
+            <TextView style="@style/main_item_arrow" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/id_cameralist_cameralayer_segment"
+            style="@style/main_item_reletivelayout">
+
+            <TextView
+                style="@style/main_item_textview"
+                android:text="Segment recording" />
+
+            <TextView style="@style/main_item_arrow" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/id_cameralist_mp3record"
+            style="@style/main_item_reletivelayout">
+
+            <TextView
+                style="@style/main_item_textview"
+                android:text="Music beat recording" />
+
+            <TextView style="@style/main_item_arrow" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/id_cameralist_green_bg_record"
+            style="@style/main_item_reletivelayout">
+
+            <TextView
+                style="@style/main_item_textview"
+                android:text="Green screen map (similar to actors performing in front of the green screen)" />
+
+            <TextView style="@style/main_item_arrow" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/id_cameralist_sublayer1"
+            style="@style/main_item_reletivelayout">
+
+            <TextView
+                style="@style/main_item_textview"
+                android:text="Sublayer demo 1" />
+
+            <TextView style="@style/main_item_arrow" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/id_cameralist_sublayer2"
+            style="@style/main_item_reletivelayout">
+
+            <TextView
+                style="@style/main_item_textview"
+                android:text="Sublayer Demo 2" />
+
+            <TextView style="@style/main_item_arrow" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</ScrollView>

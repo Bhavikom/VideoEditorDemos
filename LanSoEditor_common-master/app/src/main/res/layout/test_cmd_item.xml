@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dip"
+    android:background="@drawable/function_item_btn_bg"
+    android:gravity="center_vertical" >
+
+     <TextView  android:id="@+id/id_test_cmditem_cnt"
+           	        android:layout_width="wrap_content"
+           	        android:layout_height="48dip"
+           	        android:layout_centerVertical="true"
+           	        android:gravity="center"
+           	        android:textSize="18sp"
+           	        android:layout_marginLeft="20dip"
+           	        android:textColor="@color/blue"
+           	        android:textStyle="bold"/>
+           	    
+           	    <TextView  android:id="@+id/id_test_cmditem_tv"
+           	        android:layout_width="wrap_content"
+           	        android:layout_height="wrap_content"
+           	        android:layout_centerInParent="true"
+           	        android:textColor="@color/red"
+           	        android:textSize="18sp"
+           	        android:gravity="center"/>
+</RelativeLayout>

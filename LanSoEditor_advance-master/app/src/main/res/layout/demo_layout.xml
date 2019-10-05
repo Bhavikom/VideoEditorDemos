@@ -1,0 +1,23 @@
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gold">
+
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red"
+        android:text="The following are just examples of commonly used methods. See the VideoEditor.java source file for more information."/>
+    
+    <ListView
+        android:id="@+id/id_demo_list"
+        android:layout_marginTop="6dip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="15dip"
+        android:fadeScrollbars="false" >
+    </ListView>
+    
+</LinearLayout>

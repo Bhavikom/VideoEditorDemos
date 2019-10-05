@@ -1,0 +1,102 @@
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+     android:layout_height="match_parent"
+    android:background="#FFA500"
+    android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="After the cooperation, we provide:
+         \n 1. Detailed AE template conversion instructions;
+         \n 2. A variety of templates, each template includes (AE original project, SDK processing code);
+         \n 3, SDK details are modified, better docking;
+         \n 4. Complex effects, collaborative processing "/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFA500"
+        android:orientation="vertical" >
+
+         <RelativeLayout  android:id="@+id/id_aemain_aobama" style="@style/main_item_reletivelayout2">
+                 <TextView   android:text="Obama placards" style="@style/main_item_textview"/>
+                <TextView  style="@style/main_item_arrow"/>
+        </RelativeLayout>
+
+
+         <RelativeLayout  android:id="@+id/id_aemain_xiaohuangya" style="@style/main_item_reletivelayout2">
+                 <TextView   android:text="Little yellow duck" style="@style/main_item_textview"/>
+                <TextView  style="@style/main_item_arrow"/>
+        </RelativeLayout>
+
+        <RelativeLayout  android:id="@+id/id_aemain_zhemehaokan" style="@style/main_item_reletivelayout2">
+                 <TextView   android:text="Why are you so beautiful?" style="@style/main_item_textview"/>
+                <TextView  style="@style/main_item_arrow"/>
+        </RelativeLayout>
+
+        <RelativeLayout  android:id="@+id/id_aemain_xianzi" style="@style/main_item_reletivelayout2">
+            <TextView   android:text="Zixia Fairy" style="@style/main_item_textview"/>
+            <TextView  style="@style/main_item_arrow"/>
+        </RelativeLayout>
+
+        <RelativeLayout  android:id="@+id/id_aemain_kuaishan" style="@style/main_item_reletivelayout2">
+            <TextView   android:text="Text flashing" style="@style/main_item_textview"/>
+            <TextView  style="@style/main_item_arrow"/>
+        </RelativeLayout>
+
+        <RelativeLayout  android:id="@+id/id_aemain_more_picture" style="@style/main_item_reletivelayout2">
+            <TextView   android:text="Multiple pictures" style="@style/main_item_textview"/>
+            <TextView  style="@style/main_item_arrow"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout  android:id="@+id/id_aemain_videobtimap" style="@style/main_item_reletivelayout2">
+        <TextView   android:text="Replace video" style="@style/main_item_textview"/>
+        <TextView  style="@style/main_item_arrow"/>
+    </RelativeLayout>
+
+
+        <RelativeLayout  android:id="@+id/id_aemain_bitmapxy" style="@style/main_item_reletivelayout2">
+            <TextView   android:text="Image coordinates (developer assistance code)" style="@style/main_item_textview"/>
+            <TextView  style="@style/main_item_arrow"/>
+        </RelativeLayout>
+
+        <!--<RelativeLayout  android:id="@+id/id_aemain_zhankai" style="@style/main_item_reletivelayout2">-->
+            <!--<TextView   android:text="视频展开" style="@style/main_item_textview"/>-->
+            <!--<TextView  style="@style/main_item_arrow"/>-->
+        <!--</RelativeLayout>-->
+
+    </LinearLayout>
+
+
+
+
+
+
+
+    <RelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="150dip"
+	        android:gravity="center_vertical"
+	        android:background="#FFFFFF"
+	        android:layout_marginTop="20dip"
+	         >
+	         <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerVertical="true"
+		        android:layout_marginLeft="10dip"
+		        android:text="@string/adv_hint5"
+		        android:textColor="#0000ff"/>
+	</RelativeLayout>
+
+</LinearLayout>
+</ScrollView>

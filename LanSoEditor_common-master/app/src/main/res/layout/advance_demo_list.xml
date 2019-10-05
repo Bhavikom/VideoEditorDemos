@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gold">
+
+    <Button
+        android:id="@+id/id_advance_list_aedemo"
+        android:layout_width="match_parent"
+        android:layout_marginTop="40dp"
+        android:layout_height="60dip"
+        android:textColor="@color/red"
+        android:background="@color/white"
+        android:text="Ae模板特效 演示"/>
+
+
+    <Button
+        android:id="@+id/id_advance_list_lantianbaiyun"
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/red"
+        android:background="@color/white"
+        android:text="蓝天白云"/>`
+
+    <Button
+        android:id="@+id/id_advance_list_huainianchuqing"
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/red"
+        android:background="@color/white"
+        android:text="怀念青春"/>
+
+    <Button
+        android:id="@+id/id_advance_list_douyin_effect"
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/red"
+        android:background="@color/white"
+        android:text="抖音效果"/>
+
+    <Button
+        android:id="@+id/id_advance_list_seek_exact"
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/red"
+        android:background="@color/white"
+        android:text="视频 精确定位"/>
+
+
+</LinearLayout>

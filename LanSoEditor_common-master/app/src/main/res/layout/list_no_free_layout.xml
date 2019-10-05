@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="说明:我们基本版本SDK是免费的, 此列表,为需要的客户提供额外的增值功能(不免费),详情在README.md中 \n如果您不需要,请直接删除NoFree文件夹,不影响免费的任何功能"
+        android:textColor="@color/red"
+        android:layout_margin="5dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout  android:id="@+id/id_nofree_list_compress" style="@style/main_item_reletivelayout2">
+                <TextView   android:text="视频压缩" style="@style/main_item_textview"/>
+                <TextView  style="@style/main_item_arrow"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout  android:id="@+id/id_nofree_list_extractspeed" style="@style/main_item_reletivelayout2">
+                <TextView   android:text="测试提取帧速度" style="@style/main_item_textview"/>
+                <TextView  style="@style/main_item_arrow"/>
+            </RelativeLayout>
+
+            <RelativeLayout  android:id="@+id/id_nofree_list_extract20" style="@style/main_item_reletivelayout2">
+                <TextView   android:text="提取20帧" style="@style/main_item_textview"/>
+                <TextView  style="@style/main_item_arrow"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout  android:id="@+id/id_nofree_list_extract60" style="@style/main_item_reletivelayout2">
+                <TextView   android:text="提取60帧" style="@style/main_item_textview"/>
+                <TextView  style="@style/main_item_arrow"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout  android:id="@+id/id_nofree_list_audiopad" style="@style/main_item_reletivelayout2">
+                <TextView   android:text="多音频任意混合" style="@style/main_item_textview"/>
+                <TextView  style="@style/main_item_arrow"/>
+            </RelativeLayout>
+
+            <RelativeLayout  android:id="@+id/id_nofree_list_segmentrecord" style="@style/main_item_reletivelayout2">
+                <TextView   android:text="正方形录制" style="@style/main_item_textview"/>
+                <TextView  style="@style/main_item_arrow"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

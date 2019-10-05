@@ -1,0 +1,36 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+ 
+      <com.lansosdk.editorDemo.utils.VideoPlayView
+            android:id="@+id/video_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+  
+    <LinearLayout 
+        android:id="@+id/id_player_control_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/video_view"
+        android:orientation="horizontal"
+        android:visibility="gone">
+        <Button 
+            android:id="@+id/id_player_start"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="播放"
+            android:layout_margin="5dip"/>
+        <Button 
+            android:id="@+id/id_player_pause"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="暂停"
+            android:layout_margin="5dip"/>
+    </LinearLayout>
+</RelativeLayout>

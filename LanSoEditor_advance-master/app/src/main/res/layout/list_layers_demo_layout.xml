@@ -1,0 +1,83 @@
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" 
+    android:layout_width="match_parent"
+     android:layout_height="match_parent"
+    android:background="#FFA500"
+    android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFA500"
+    android:orientation="vertical" >
+  <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="The basic components of the Lansong SDK [layer]\n similar to the button control in the UI, picture control, text box, edit box, etc. \n\n belongs to the basic control. \n\n If you are in use, you need a small adjustment, You can contact us at any time and finish the day."/>
+  
+     <RelativeLayout  android:id="@+id/id_layer_layermothed1" style="@style/main_item_reletivelayout">
+           	    <TextView   android:text="Features supported by all layers 1" 				style="@style/main_item_textview"/>
+			<TextView  style="@style/main_item_arrow"/> 
+	  </RelativeLayout>
+	  
+        <RelativeLayout  android:id="@+id/id_layer_layermothed2" style="@style/main_item_reletivelayout">
+           	    <TextView   android:text="Features supported by all layers 2" 				style="@style/main_item_textview"/>
+			<TextView  style="@style/main_item_arrow"/> 
+		</RelativeLayout>
+	<RelativeLayout  android:id="@+id/id_layer_layermothed3" style="@style/main_item_reletivelayout">
+           	    <TextView   android:text="Filters supported by all layers 3" 				style="@style/main_item_textview"/>
+			<TextView  style="@style/main_item_arrow"/> 
+		</RelativeLayout>
+		
+	  <RelativeLayout  android:id="@+id/id_layer_viewlayerdemo1" style="@style/main_item_reletivelayout">
+           	 <TextView   android:text="UI layer" style="@style/main_item_textview"/>
+			<TextView  style="@style/main_item_arrow"/> 
+	</RelativeLayout>
+	
+    <RelativeLayout  android:id="@+id/id_layer_viewlayerdemo2" style="@style/main_item_reletivelayout">
+           	    <TextView   android:text="UI layer 2" style="@style/main_item_textview"/>
+			<TextView  style="@style/main_item_arrow"/> 
+	</RelativeLayout>
+	
+    <RelativeLayout  android:id="@+id/id_layer_canvaslayerdemo" style="@style/main_item_reletivelayout">
+           	    <TextView   android:text="Canvas layer" style="@style/main_item_textview"/>
+			<TextView  style="@style/main_item_arrow"/> 
+	</RelativeLayout>
+
+	<RelativeLayout  android:id="@+id/id_layer_canvaslayer_bg" style="@style/main_item_reletivelayout">
+		<TextView   android:text="Canvas layer (background)" style="@style/main_item_textview"/>
+		<TextView  style="@style/main_item_arrow"/>
+	</RelativeLayout>
+
+    
+	     <RelativeLayout  android:id="@+id/id_layer_mvlayerdemo" style="@style/main_item_reletivelayout">
+           	    <TextView   android:text="MV layer" 				style="@style/main_item_textview"/>
+			<TextView  style="@style/main_item_arrow"/> 
+		</RelativeLayout>
+		
+		 <RelativeLayout  android:id="@+id/id_layer_viewremark" style="@style/main_item_reletivelayout">
+           	 <TextView   android:text="Picture layer" 				style="@style/main_item_textview"/>
+			<TextView  style="@style/main_item_arrow"/> 
+		</RelativeLayout>   
+		
+		  <RelativeLayout  android:id="@+id/id_layer_twovideolayer" style="@style/main_item_reletivelayout">
+           	 <TextView   android:text="Dual video layer" 				style="@style/main_item_textview"/>
+			<TextView  style="@style/main_item_arrow"/> 
+		</RelativeLayout>  
+		
+		  
+
+		<RelativeLayout  android:id="@+id/id_layer_drawpadpictureexecute" style="@style/main_item_reletivelayout">
+	           	<TextView   android:text="Background container (multiple layers mixed) " 	 android:textColor="@color/blue" 			style="@style/main_item_textview"/>
+				<TextView  style="@style/main_item_arrow"/> 
+		</RelativeLayout>
+
+		<TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Other layers: DataLayer, YUVLayer, GifLayer are relatively simple and can be used directly, not listed here."/>
+		
+</LinearLayout>
+</ScrollView>

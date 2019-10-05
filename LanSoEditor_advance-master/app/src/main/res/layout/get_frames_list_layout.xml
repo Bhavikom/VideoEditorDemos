@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFA500"
+    android:orientation="vertical" >
+    
+   <RelativeLayout  android:id="@+id/id_getframe_testtime" style="@style/main_item_reletivelayout">
+           	 <TextView   android:text="Test to get the speed of all frames [real time]" style="@style/main_item_textview"/>
+			<TextView  style="@style/main_item_arrow"/> 
+	</RelativeLayout>
+	
+    <RelativeLayout  android:id="@+id/id_getframe_get25frame" style="@style/main_item_reletivelayout">
+           	 <TextView   android:text="Get 25 frames on average" style="@style/main_item_textview"/>
+			<TextView  style="@style/main_item_arrow"/> 
+	</RelativeLayout>
+	
+     <RelativeLayout  android:id="@+id/id_getframe_get60frame" style="@style/main_item_reletivelayout">
+           	 <TextView   android:text="Get 60 frames on average" style="@style/main_item_textview"/>
+			<TextView  style="@style/main_item_arrow"/> 
+	</RelativeLayout>
+	
+      <RelativeLayout  android:id="@+id/id_getframe_allframe" style="@style/main_item_reletivelayout">
+           	 <TextView   android:text="Get all the frames in the video" style="@style/main_item_textview"/>
+			<TextView  style="@style/main_item_arrow"/> 
+	</RelativeLayout>
+	
+        <RelativeLayout  android:id="@+id/id_getframe_bmpedit" style="@style/main_item_reletivelayout">
+           	 <TextView   android:text="Picture editing" style="@style/main_item_textview"/>
+			<TextView  style="@style/main_item_arrow"/> 
+	</RelativeLayout>
+      
+	 <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="The following is relatively simple, no longer write interface, you can see the last demo code in each class (continuous update...) \n image multi-filter effect: BitmapGetFilters\n sound container: AudioPadExecute; \n sound stitching: AudioConcat; \n Video codec AVDecode/AVEncoder; and so on;"/>
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,69 @@
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gold">
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    
+         <Button
+             android:id="@+id/id_main_use_default_videobtn"
+             android:layout_width="0dip"
+             android:layout_weight="5"
+             android:layout_height="50dip"
+             android:textColor="@color/red"
+             android:background="@drawable/rect_button_bg"
+             android:text="使用自带演示视频"
+             />
+         <ImageView
+             android:id="@+id/id_main_select_video"
+             android:layout_width="0dip"
+             android:layout_weight="2"
+             android:layout_height="50dip"
+             android:src="@drawable/ic_menu_archive"
+             />
+	</LinearLayout>
+	
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_main_tvvideo"
+	    android:textSize="18sp"/>
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red"
+        android:text="以下仅为常用方法的举例,更多见VideoEditor.java源文件"/>
+
+    <Button
+        android:id="@+id/id_main_advance_demo"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:text="专业版 特色功能演示."
+        android:background="@drawable/main_item_btn_bg"
+        android:layout_margin="10dp"
+        android:textColor="@color/red"/>
+
+    <Button
+        android:id="@+id/id_main_nofree_demo"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:text="增值服务功能."
+        android:background="@drawable/main_item_btn_bg"
+        android:layout_margin="10dp"
+        android:textColor="@color/red"/>
+
+    <ListView
+        android:id="@+id/id_demo_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dip"
+        android:dividerHeight="15dip"
+        android:fadeScrollbars="false" >
+    </ListView>
+
+</LinearLayout>

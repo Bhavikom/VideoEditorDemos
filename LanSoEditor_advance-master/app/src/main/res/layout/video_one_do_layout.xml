@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+  	android:background="@color/white_40" >
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:text="For examples of common functions of video operations, please see our other examples for more features."
+        android:textColor="@color/red"/>
+
+	<Button
+		android:id="@+id/id_onedoe_export_btn"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/corners_button_orange_bg"
+		android:layout_marginRight="40dp"
+		android:layout_marginLeft="40dp"
+		android:text="Start exporting"/>
+
+      <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+         >
+	       <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical">
+
+			   <!--增加背景音乐-->
+			   <RelativeLayout style="@style/videoonedo_item">
+				   <TextView  style="@style/videoonedo_textview"  android:text="1.Add background music" />
+				   <com.example.advanceDemo.utils.ButtonEnable  android:id="@+id/id_onedo_bgmisuc_btn" style="@style/videoonedo_button" />
+			   </RelativeLayout>
+
+			   <!--调视频原声大小-->
+			   <RelativeLayout style="@style/videoonedo_item">
+				   <TextView  style="@style/videoonedo_textview"  android:text="2.Reduce the original sound of the video" />
+				   <com.example.advanceDemo.utils.ButtonEnable  android:id="@+id/id_onedo_audiovolume_btn" style="@style/videoonedo_button" />
+			   </RelativeLayout>
+
+
+			   <!--//裁剪时长-->
+			   <RelativeLayout style="@style/videoonedo_item">
+				   <TextView  style="@style/videoonedo_textview"  android:text="3.Cutting time" />
+				   <com.example.advanceDemo.utils.ButtonEnable  android:id="@+id/id_onedo_cutduration_btn" style="@style/videoonedo_button" />
+			   </RelativeLayout>
+
+
+			   <!--//裁剪画面-->
+			   <RelativeLayout style="@style/videoonedo_item">
+				   <TextView  style="@style/videoonedo_textview"  android:text="4.Crop screen" />
+				   <com.example.advanceDemo.utils.ButtonEnable  android:id="@+id/id_onedo_cropframe_btn" style="@style/videoonedo_button" />
+			   </RelativeLayout>
+
+
+			   <!--缩放-->
+			   <RelativeLayout style="@style/videoonedo_item">
+				   <TextView  style="@style/videoonedo_textview"  android:text="5.Zoom screen" />
+				   <com.example.advanceDemo.utils.ButtonEnable  android:id="@+id/id_onedo_scale_btn" style="@style/videoonedo_button" />
+			   </RelativeLayout>
+
+
+			   <!--压缩-->
+			   <RelativeLayout style="@style/videoonedo_item">
+				   <TextView  style="@style/videoonedo_textview"  android:text="6.compression" />
+				   <com.example.advanceDemo.utils.ButtonEnable  android:id="@+id/id_onedo_compress_btn" style="@style/videoonedo_button" />
+			   </RelativeLayout>
+
+
+			   <!--提取视频帧.-->
+			   <RelativeLayout style="@style/videoonedo_item">
+				   <TextView  style="@style/videoonedo_textview"  android:text="7.Extract video frames." />
+				   <com.example.advanceDemo.utils.ButtonEnable  android:id="@+id/id_onedo_extractframe_btn" style="@style/videoonedo_button" />
+			   </RelativeLayout>
+
+
+			   <!--设置编辑模式-->
+			   <RelativeLayout style="@style/videoonedo_item">
+				   <TextView  style="@style/videoonedo_textview"  android:text="8.Set edit mode" />
+				   <com.example.advanceDemo.utils.ButtonEnable  android:id="@+id/id_onedo_editmode_btn" style="@style/videoonedo_button" />
+			   </RelativeLayout>
+
+			   <!--设置滤镜-->
+			   <RelativeLayout style="@style/videoonedo_item">
+				   <TextView  style="@style/videoonedo_textview"  android:text="9.Add text" />
+				   <com.example.advanceDemo.utils.ButtonEnable  android:id="@+id/id_onedo_text_btn" style="@style/videoonedo_button" />
+			   </RelativeLayout>
+
+
+			   <!--设置滤镜-->
+			   <RelativeLayout style="@style/videoonedo_item">
+				   <TextView  style="@style/videoonedo_textview"  android:text="10.Set filter" />
+				   <com.example.advanceDemo.utils.ButtonEnable  android:id="@+id/id_onedo_filter_btn" style="@style/videoonedo_button" />
+			   </RelativeLayout>
+
+
+			   <!--设置美颜-->
+			   <RelativeLayout style="@style/videoonedo_item">
+				   <TextView  style="@style/videoonedo_textview"  android:text="11.Set beauty" />
+				   <com.example.advanceDemo.utils.ButtonEnable  android:id="@+id/id_onedo_beautiful_btn" style="@style/videoonedo_button" />
+			   </RelativeLayout>
+
+
+			   <!--增加mask-->
+			   <RelativeLayout style="@style/videoonedo_item">
+				   <TextView  style="@style/videoonedo_textview"  android:text="12.Video transparency (mask/抠图)" />
+				   <com.example.advanceDemo.utils.ButtonEnable  android:id="@+id/id_onedo_mask_btn" style="@style/videoonedo_button" />
+			   </RelativeLayout>
+
+
+			   <!--增加背景图片-->
+			   <RelativeLayout style="@style/videoonedo_item">
+				   <TextView  style="@style/videoonedo_textview"  android:text="13.Add background image" />
+				   <com.example.advanceDemo.utils.ButtonEnable  android:id="@+id/id_onedo_background_bitmap_btn" style="@style/videoonedo_button" />
+			   </RelativeLayout>
+
+
+			   <!--增加封面-->
+			   <RelativeLayout style="@style/videoonedo_item">
+				   <TextView  style="@style/videoonedo_textview"  android:text="14.Increase cover" />
+				   <com.example.advanceDemo.utils.ButtonEnable  android:id="@+id/id_onedo_cover_bitmap_btn" style="@style/videoonedo_button" />
+			   </RelativeLayout>
+
+
+			   <!--增加logo-->
+			   <RelativeLayout style="@style/videoonedo_item">
+				   <TextView  style="@style/videoonedo_textview"  android:text="15.Increase logo" />
+				   <com.example.advanceDemo.utils.ButtonEnable  android:id="@+id/id_onedo_logo_btn" style="@style/videoonedo_button" />
+			   </RelativeLayout>
+
+			   <!--增加动画-->
+			   <RelativeLayout style="@style/videoonedo_item">
+				   <TextView  style="@style/videoonedo_textview"  android:text="16.Add animation" />
+				   <com.example.advanceDemo.utils.ButtonEnable  android:id="@+id/id_onedo_mv_btn" style="@style/videoonedo_button" />
+			   </RelativeLayout>
+
+
+			   <!--增加Gif-->
+			   <RelativeLayout style="@style/videoonedo_item">
+				   <TextView  style="@style/videoonedo_textview"  android:text="17.Increase GIF" />
+				   <com.example.advanceDemo.utils.ButtonEnable  android:id="@+id/id_onedo_gif_btn" style="@style/videoonedo_button" />
+			   </RelativeLayout>
+
+
+			   <!-- 增加Canvas图层-->
+			   <RelativeLayout style="@style/videoonedo_item">
+				   <TextView  style="@style/videoonedo_textview"  android:text="18.Add a Canvas layer" />
+				   <com.example.advanceDemo.utils.ButtonEnable  android:id="@+id/id_onedo_canvas_btn" style="@style/videoonedo_button" />
+			   </RelativeLayout>
+		   </LinearLayout>
+     </ScrollView>
+
+      
+</LinearLayout>

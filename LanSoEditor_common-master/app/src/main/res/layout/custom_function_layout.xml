@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"  xmlns:android="http://schemas.android.com/apk/res/android">
+  <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    
+    <TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="@string/custom_ffmpeg_cmd"
+	    android:textColor="@color/red"
+	    android:layout_margin="10dip"
+	    android:padding="5dip"
+	    android:textSize="16sp"/>
+    
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/custom_function"
+        android:scaleType="fitXY"
+        android:layout_gravity="center_horizontal"
+	    android:layout_margin="10dip"/>
+	<TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="@string/libs_codecs"
+	    android:textColor="@color/red"
+	    android:layout_margin="10dip"
+	    android:padding="5dip"
+	    android:textSize="16sp"/>
+</LinearLayout>  
+</ScrollView>

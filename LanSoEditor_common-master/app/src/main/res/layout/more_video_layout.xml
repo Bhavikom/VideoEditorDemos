@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+     
+      
+
+    <LinearLayout
+        android:id="@+id/id_morevideo_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextureView
+                    android:id="@+id/id_test_texture1"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"/>
+
+                <TextureView
+                    android:id="@+id/id_test_texture2"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextureView
+                    android:id="@+id/id_test_texture3"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"/>
+
+                <TextureView
+                    android:id="@+id/id_test_texture4"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/black">
+
+        <Button
+            android:id="@+id/id_videolayout_nextbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="60dip"
+            android:text="下一步"
+            android:textSize="25sp"
+            android:background="@null"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"/>
+
+
+    </RelativeLayout>
+
+        
+
+
+</RelativeLayout>

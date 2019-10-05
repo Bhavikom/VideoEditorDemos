@@ -1,0 +1,78 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:background="@color/black"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Description: The video displayed on the vertical screen is rotated to the horizontal screen: the corresponding code is in: VideoV2HActivity.java."/>
+
+
+          <com.lansosdk.videoeditor.DrawPadView
+            android:id="@+id/id_vertical2h_drawpadview"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dip"
+            android:layout_height="0dip"
+            android:layout_weight="2"/>
+          <TextView 
+				    android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="@color/red"
+				    android:text="These 5 effects are just examples. Architecture SDKs, containers and layers can be stacked arbitrarily."/>
+        <LinearLayout
+    	    android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+			<Button
+				android:id="@+id/id_vertical2h_nobg"
+				android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/button_onlypress_bg"
+				android:layout_marginLeft="20dip" android:layout_marginRight="20dip" android:text="No background" android:textColor="@color/red"/>
+
+			<LinearLayout
+		           android:layout_width="match_parent" 
+		           android:layout_height="wrap_content"
+		           android:orientation="horizontal">
+		           <Button 
+		               android:id="@+id/id_vertical2h_bitmapbg" android:text="Picture background" android:background="@drawable/button_onlypress_bg"
+		               android:layout_width="0dip" android:layout_weight="1" android:layout_height="wrap_content" android:textColor="@color/red"/>
+		            <Button 
+		               android:id="@+id/id_vertical2h_videobg" android:text="Video background" android:background="@drawable/button_onlypress_bg"
+		               android:layout_width="0dip" android:layout_weight="1" android:layout_height="wrap_content" android:textColor="@color/red"/>
+		             <Button 
+		               android:id="@+id/id_vertical2h_blurbg" android:text="blur background" android:background="@drawable/button_onlypress_bg"
+		               android:layout_width="0dip" android:layout_weight="1" android:layout_height="wrap_content" android:textColor="@color/red"/>
+				</LinearLayout>
+             
+		        <LinearLayout
+		           android:layout_width="match_parent"
+		           android:layout_height="wrap_content"
+		           android:orientation="horizontal">
+
+		           <Button
+		               android:id="@+id/id_vertical2h_3rowbg" android:text="Three columns of video" android:background="@drawable/button_onlypress_bg"
+		               android:layout_width="0dip" android:layout_weight="1" android:layout_height="wrap_content" android:textColor="@color/red"/>
+				</LinearLayout>
+
+
+			<Button
+				android:id="@+id/id_vertical2h_export"
+				android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/button_onlypress_bg"
+				android:layout_marginLeft="20dip" android:layout_marginRight="20dip" android:text="Export (background processing)" android:textColor="@color/red"/>
+
+
+		</LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

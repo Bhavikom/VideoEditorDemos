@@ -1,0 +1,126 @@
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" 
+    android:layout_width="match_parent"
+     android:layout_height="match_parent"
+    android:background="#FFA500"
+    android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFA500"
+    android:orientation="vertical" >
+
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please select a video file"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"/>
+    
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    
+         <Button
+             android:id="@+id/id_main_use_default_videobtn"
+             android:layout_width="0dip"
+             android:layout_weight="5"
+             android:layout_height="60dip"
+             android:background="@drawable/rect_button_bg"
+             android:text="Use the default demo video"
+             />
+         <ImageView
+             android:id="@+id/id_main_select_video"
+             android:layout_width="0dip"
+             android:layout_weight="2"
+             android:layout_height="60dip"
+             android:src="@drawable/ic_menu_archive"
+             />
+	</LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_main_tvvideo"/>
+    
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFA500"
+    android:orientation="vertical" >
+
+
+     <RelativeLayout  android:id="@+id/id_mainlist_camerarecord" style="@style/main_item_reletivelayout2">
+           	 <TextView   android:text="Camera recording" style="@style/main_item_textview"/>
+			<TextView  style="@style/main_item_arrow"/> 
+	</RelativeLayout>
+	
+     	
+     <RelativeLayout  android:id="@+id/id_mainlist_somelayer" style="@style/main_item_reletivelayout2">
+           	 <TextView   android:text="Layer" style="@style/main_item_textview"/>
+			<TextView  style="@style/main_item_arrow"/> 
+	</RelativeLayout>
+
+    <RelativeLayout  android:id="@+id/id_mainlist_changjing" style="@style/main_item_reletivelayout2">
+           	 <TextView   android:text="Scene example" style="@style/main_item_textview"/>
+			<TextView  style="@style/main_item_arrow"/> 
+	</RelativeLayout>
+	
+         
+      <RelativeLayout  android:id="@+id/id_mainlist_douyin" style="@style/main_item_reletivelayout2">
+           	 <TextView   android:text="Vibrato effect" style="@style/main_item_textview"/>
+			<TextView  style="@style/main_item_arrow"/> 
+	</RelativeLayout>
+
+		<RelativeLayout  android:id="@+id/id_mainlist_weishang" style="@style/main_item_reletivelayout2">
+			<TextView   android:text="AE kinetic / derivative effect" style="@style/main_item_textview"/>
+			<TextView  style="@style/main_item_arrow"/>
+		</RelativeLayout>
+
+		<RelativeLayout  android:id="@+id/id_mainlist_gamevideo" style="@style/main_item_reletivelayout2">
+			<TextView   android:text="Game video effect" style="@style/main_item_textview"/>
+			<TextView  style="@style/main_item_arrow"/>
+		</RelativeLayout>
+
+		<RelativeLayout  android:id="@+id/id_mainlist_videoonedo" style="@style/main_item_reletivelayout2">
+			<TextView   android:text="17 common treatments such as background music/compression/logo" style="@style/main_item_textview"/>
+			<TextView  style="@style/main_item_arrow"/>
+		</RelativeLayout>
+
+		<RelativeLayout  android:id="@+id/id_mainlist_bitmaps" style="@style/main_item_reletivelayout2">
+				 <TextView   android:text="Picture/sound container" style="@style/main_item_textview"/>
+				<TextView  style="@style/main_item_arrow"/>
+		</RelativeLayout>
+
+		<RelativeLayout  android:id="@+id/id_mainlist_videoplay" style="@style/main_item_reletivelayout2">
+			 <TextView   android:text="Direct play" style="@style/main_item_textview"/>
+			<TextView  style="@style/main_item_arrow"/>
+		</RelativeLayout>
+</LinearLayout>
+ 
+     
+   
+	
+		
+
+	
+    <RelativeLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="150dip"
+	        android:gravity="center_vertical"
+	        android:background="#FFFFFF"
+	        android:layout_marginTop="20dip"
+	         >
+	         <TextView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerVertical="true"
+		        android:layout_marginLeft="10dip"
+		        android:text="@string/adv_hint5"
+		        android:textColor="#0000ff"/>
+	</RelativeLayout>
+
+</LinearLayout>
+</ScrollView>

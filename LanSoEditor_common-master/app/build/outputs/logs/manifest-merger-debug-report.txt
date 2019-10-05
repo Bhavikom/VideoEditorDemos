@@ -1,0 +1,203 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:2:1-74:12
+INJECTED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:2:1-74:12
+INJECTED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:2:1-74:12
+INJECTED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:2:1-74:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\OM\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\b3f450e357050c9d5ce2900a57077cf4\AndroidManifest.xml:17:1-22:12
+MERGED from [:lansongsdk] C:\Users\OM\Downloads\LanSoEditor_common-master\lansongsdk\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\OM\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\28e9be38fd5b9b14e6446e20747c0445\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\OM\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\2996bc4051bee022ac513ac3512449bf\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\OM\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\526564e41d3f1531e0757131b19caac9\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\OM\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\5abe620a8d25ef8bd582bff1023d61e3\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\OM\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\4226d1a48a4f57e854a5bf3f75f474a2\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\OM\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\377f89258b4fb0fd70a5f5eeb24cbc4e\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\OM\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\3375fc1021aca2ee00a7fe3734ef1fc0\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\OM\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\2a32f60113b609ab33b42406eba39dd1\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\OM\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\4949aed67bfd2f4e017ece0bec9a8565\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\OM\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\45da388154d8422ff977e3c34b109b15\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:2:1-74:12
+INJECTED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:2:1-74:12
+INJECTED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:2:1-74:12
+	package
+		ADDED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:4:5-35
+		INJECTED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:6:5-32
+		INJECTED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:3:5-51
+	xmlns:android
+		ADDED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:5:5-31
+		INJECTED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml
+uses-feature#android.hardware.camera
+ADDED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:8:5-60
+	android:name
+		ADDED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:8:19-57
+uses-feature#android.hardware.autofocus
+ADDED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:9:5-63
+	android:name
+		ADDED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:9:19-60
+uses-permission#android.permission.CAMERA
+ADDED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:11:5-65
+	android:name
+		ADDED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:11:22-62
+uses-permission#android.permission.FLASHLIGHT
+ADDED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:12:5-69
+	android:name
+		ADDED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:12:22-66
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:13:5-71
+	android:name
+		ADDED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:13:22-68
+uses-permission#android.permission.WAKE_LOCK
+ADDED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:14:5-68
+	android:name
+		ADDED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:14:22-65
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:15:5-81
+	android:name
+		ADDED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:15:22-78
+uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
+ADDED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:16:5-80
+	android:name
+		ADDED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:16:22-77
+permission#android.permission.FLASHLIGHT
+ADDED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:18:5-21:44
+	android:protectionLevel
+		ADDED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:21:9-41
+	android:permissionGroup
+		ADDED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:20:9-77
+	android:name
+		ADDED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:19:9-53
+uses-feature#android.hardware.camera.front
+ADDED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:24:5-26:36
+	android:required
+		ADDED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:26:9-33
+	android:name
+		ADDED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:25:9-53
+application
+ADDED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:29:5-72:19
+	android:label
+		ADDED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:32:9-41
+	tools:ignore
+		ADDED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:34:9-48
+	android:icon
+		ADDED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:31:9-41
+	android:allowBackup
+		ADDED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:30:9-35
+	android:theme
+		ADDED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:33:9-40
+activity#com.example.commonDemo.MainActivity
+ADDED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:36:9-43:20
+	android:name
+		ADDED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:37:13-63
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:38:13-42:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:39:17-69
+	android:name
+		ADDED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:39:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:41:17-77
+	android:name
+		ADDED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:41:27-74
+activity#com.example.commonDemo.VideoLayoutDemoActivity
+ADDED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:44:9-47:20
+	android:theme
+		ADDED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:45:13-71
+	android:name
+		ADDED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:44:19-80
+activity#com.example.commonDemo.noFree.VideoCompressActivity
+ADDED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:50:9-97
+	android:name
+		ADDED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:50:19-85
+activity#com.example.commonDemo.noFree.ExtractFrameDemoActivity
+ADDED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:51:9-100
+	android:name
+		ADDED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:51:19-88
+activity#com.example.commonDemo.noFree.DisplayFramesActivity
+ADDED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:52:9-97
+	android:name
+		ADDED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:52:19-85
+activity#com.example.commonDemo.noFree.ListNoFreeActivity
+ADDED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:53:9-84
+	android:name
+		ADDED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:53:19-82
+activity#com.example.commonDemo.VideoPlayerActivity
+ADDED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:58:9-88
+	android:name
+		ADDED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:58:19-76
+activity#com.example.commonDemo.FileExplorerActivity
+ADDED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:59:9-89
+	android:name
+		ADDED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:59:19-77
+activity#com.example.commonDemo.MediaInfoActivity
+ADDED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:60:9-86
+	android:name
+		ADDED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:60:19-74
+activity#com.example.commonDemo.CustomFunctionActivity
+ADDED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:61:9-81
+	android:name
+		ADDED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:61:19-79
+activity#com.example.commonDemo.AVEditorDemoActivity
+ADDED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:62:9-79
+	android:name
+		ADDED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:62:19-77
+activity#com.example.commonDemo.advanceSuggest.ListAdvanceDemoActivity
+ADDED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:65:9-66:20
+	android:name
+		ADDED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:65:19-95
+activity#com.example.commonDemo.advanceSuggest.AERecordFileHintActivity
+ADDED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:67:9-98
+	android:name
+		ADDED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:67:19-96
+activity#com.example.commonDemo.advanceSuggest.PlayAdvanceDemoActivity
+ADDED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:68:9-70:20
+	android:theme
+		ADDED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:69:13-71
+	android:name
+		ADDED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml:68:19-95
+uses-sdk
+INJECTED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\OM\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\b3f450e357050c9d5ce2900a57077cf4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\OM\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\b3f450e357050c9d5ce2900a57077cf4\AndroidManifest.xml:20:5-44
+MERGED from [:lansongsdk] C:\Users\OM\Downloads\LanSoEditor_common-master\lansongsdk\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:lansongsdk] C:\Users\OM\Downloads\LanSoEditor_common-master\lansongsdk\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\OM\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\28e9be38fd5b9b14e6446e20747c0445\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\OM\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\28e9be38fd5b9b14e6446e20747c0445\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\OM\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\2996bc4051bee022ac513ac3512449bf\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\OM\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\2996bc4051bee022ac513ac3512449bf\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\OM\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\526564e41d3f1531e0757131b19caac9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\OM\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\526564e41d3f1531e0757131b19caac9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\OM\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\5abe620a8d25ef8bd582bff1023d61e3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\OM\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\5abe620a8d25ef8bd582bff1023d61e3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\OM\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\4226d1a48a4f57e854a5bf3f75f474a2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\OM\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\4226d1a48a4f57e854a5bf3f75f474a2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\OM\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\377f89258b4fb0fd70a5f5eeb24cbc4e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\OM\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\377f89258b4fb0fd70a5f5eeb24cbc4e\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\OM\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\3375fc1021aca2ee00a7fe3734ef1fc0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\OM\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\3375fc1021aca2ee00a7fe3734ef1fc0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\OM\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\2a32f60113b609ab33b42406eba39dd1\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\OM\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\2a32f60113b609ab33b42406eba39dd1\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\OM\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\4949aed67bfd2f4e017ece0bec9a8565\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\OM\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\4949aed67bfd2f4e017ece0bec9a8565\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\OM\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\45da388154d8422ff977e3c34b109b15\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\OM\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\45da388154d8422ff977e3c34b109b15\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\OM\Downloads\LanSoEditor_common-master\app\src\main\AndroidManifest.xml

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#009900">
+    
+   
+    <TextView 
+        android:id="@+id/id_test_cmd_demo_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dip"
+        android:textSize="18dip"
+        android:text="@string/video_editor_demo_hint"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+    
+        
+      <Button 
+        android:id="@+id/id_test_cmd_btn"
+        android:layout_width="match_parent"
+        android:layout_margin="20dip"
+        android:layout_height="wrap_content"
+        android:text="开始测试"
+        android:layout_centerInParent="true"
+        android:background="@drawable/function_item_btn_bg"/>
+        
+            
+      <Button 
+        android:id="@+id/id_test_cmdvideo_play_btn"
+        android:layout_below="@id/id_test_cmd_btn"
+        android:layout_width="match_parent"
+        android:layout_margin="20dip"
+        android:layout_height="wrap_content"
+        android:text="目标视频预览"
+        android:background="@drawable/function_item_btn_bg"/>
+      
+ 
+      <Button 
+        android:id="@+id/id_test_cmdaudio_play_btn"
+        android:layout_below="@id/id_test_cmdvideo_play_btn"
+        android:layout_width="match_parent"
+        android:layout_margin="20dip"
+        android:layout_height="wrap_content"
+        android:text="目标音频预览"
+        android:background="@drawable/function_item_btn_bg"/>
+
+</RelativeLayout>

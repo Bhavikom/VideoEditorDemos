@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+  	android:background="@color/white_40" >
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:text="DrawPad is a container, you can put any layer inside, and adjust the various actions of the layer. \n Here are just common examples, more useful features, please see our other examples."
+        android:textColor="@color/red"/>
+    
+      <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+         >
+	       <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical">
+	        	 <include 
+				       layout="@layout/onedo_music_merge"/>
+		        <include 
+				       layout="@layout/onedo_scale_merge"/>
+		         <include 
+				       layout="@layout/onedo_compress_merge"/>
+		         <include 
+				       layout="@layout/onedo_cutduration_merge"/>
+		         <include 
+				       layout="@layout/onedo_crop_merge"/>
+		         <include 
+				       layout="@layout/onedo_filter_merge"/>
+		        <include 
+				       layout="@layout/onedo_logo_merge"/>
+		          
+		        <include 
+				       layout="@layout/onedo_addword_merge"/>
+
+		        <RelativeLayout 
+	           		android:layout_width="match_parent"
+	           		android:layout_height="100dip">
+		            
+		            <Button
+		                android:id="@+id/id_onedo_start_process" 
+		                android:layout_width="match_parent"
+		                android:layout_margin="10dip"
+		                android:layout_height="60dip"
+		                android:layout_centerInParent="true"
+            			android:background="@drawable/rect_button_bg"
+		                android:text="Start processing"/>
+		        </RelativeLayout>
+		           
+	   	  </LinearLayout>
+	   	  
+	    
+     </ScrollView>
+
+      
+</LinearLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Blue Pine DEMO</string>
+
+        <string name="message_granted">All permissions have been granted.</string>
+        <string name="message_denied">Permission \"%1$s\" has been denied.</string>
+
+        <string name="lansong_hint">Hangzhou Lansong Technology Co., Ltd.\n Professional video processing SDK development team.</string>
+        <string name="sdk_limit">SDK version number is: %1$s\nSDK under the authorization limit, [only run in this demo], and valid time to \"%2$d\" year\" %3$d\"Please note before the month.</string>
+
+        <string name="adv_hint5"> "This is the blue pine short video professional version SDK, commercial fee authorization cooperation form, the price can contact us. Contact: \n QQ:1852600324\n Company Tel: 0571-89052701\n email :support@lansongtech.com."</string>
+
+        <string name="select_video">Please select video </string>
+
+        <string name="videoplay_hint">Video knowledge: \n is currently displayed on the screen in equal proportions, the purpose is to keep the aspect ratio of the video consistent, the video is not deformed; \n\n may result in a small resolution screen Being enlarged, the picture quality is degraded, this is normal, just the interface thing to play, does not affect the video itself </string>
+
+        <string name="drawpadexecute_demo_hint">This function demonstrates: background video editing \n\n process: open video playback, add two pictures and a UI to it, which gives a picture to move position and doubles in 3 seconds , disappeared at 6 seconds, processing real-time video formation, can be used for preview and transmission, etc. </string>
+
+
+        <string name="insert_audio_demo_hint">Insert a piece of audio into the original video. The principle of \n\n is: confuse the audio part of the video with another audio material to form a new audio file.</string>
+
+
+        <string name="extract_video_frame_hint">This function demonstrates: extract every frame in the video to you \n\n every time you process a frame, the bitmap format picture and timestamp of the frame are sent to you through the callback, you can specify the start time and End at any time. Specify the extraction interval and specify an average of several frames.\n</string>
+
+        <string name="pictureset_execute_demo_hint"> This function demonstrates: background image composition \n\n Process: At the same time, obtain multiple BitmapLayer from DrawPad, and then operate multiple BitmapLayer according to the time progress of DrawPad, thus realizing picture animation effect, here only Demonstrate the panning effect. The actual use can be pan, zoom, rotate, and flicker. You can also add a ViewLayer to render the animation of the pattern.</string>
+
+        <string name="filterLayer_execute_hint"> This function demonstrates: background video filter processing, \n zoom / compression / fine cut / screen cropping, etc. are all this function, but the configuration is different. n. Process: create DrawPad container, to Add a video layer inside, start processing. Switch a filter at 3 seconds, switch another filter at 6 seconds </string>
+
+        <string name="videolayer_transform_hints"> demonstration process: video A first, picture B after 3 seconds, then video C >=> 3 times after 3 seconds, the current synthesis does not support sound synthesis. \n\n But you can add background music to the synthesized video.</string>
+        <string name="audiopad_execute_hint"> This feature demonstrates: a demonstration of the background audio container \n\n. Process: </string>
+
+
+    <string name="filterexecute_demo_hint">This function demonstrates: background video filter \n\n. Applicable when there is no need for UI interface to do filter preview. For example, without filter preview or no preview, you can make video Filter processing, used in such cases.</string>
+        <string name="picture_set_realtime_hint">Use multiple BitmapLayer layers to draw into the DrawPad container, and debug their various animations to achieve the effect of the album</string>
+
+        <string name="origal_width">Hint: \nThe current video width is smaller than the screen width. Take the original size display, you can modify it to the adaptive screen width display form in the code</string>
+        <string name="fix_width">Hint: \nThe current video width is greater than or equal to the screen width, take adaptive to the screen width, you can modify the display format to the original size in the code </string>
+
+        <string name="file_not_exist"> file does not exist </string>
+
+        <string name="drawimage_hint1"> Principle: Create a container, first put the video layer, then put the UI layer. The UI layer is your UI interface, you can put all kinds of cool UI as a layer, superimposed On the video.
+\nThe stickers and texts presented here can be added in real time or added after pause </string>
+
+        <string name="canvaslayer_hint1">VideoLayer + CanvasLayer is drawn to the container</string>
+
+        <string name="video_remark">Slide the screen and mark it\n\n VideoLayer + BitmapLayer to draw on the container </string>
+        <string name="filter">filter </string>
+
+        <string name="cuoluo_layout">Spread layout layer demo: \n Create a square container with a video layer on it, a Gif layer on the left and an image layer on the right.\n (You also Can be laid out in other ways. Just for example) </string>
+        <string name="vdieo2_layout">Two video left and right layout demos: \n Create a square container, put two video layers separately. Width is doubled and displayed.\n (audio is clear and not noisy, temporarily used One. If you need both to display, you can mix and merge directly.) </string>
+
+        <string name="gaobai_hint">\nAdd a ViewLayer to the container.</string>
+        <string name="mvlayer_hint">\nAdd a VideoLayer and MVLayer layer to the DrawPad container.</string>
+        <string name="cameralayer_hint">\nAdd a CameraLayer to the DrawPad container.</string>
+
+        <string name="gaobai_1">know you</string>
+        <string name="gaobai_2"> must be the arrangement of fate </string>
+        <string name="gaobai_3">If this is an error</string>
+        <string name="gaobai_4">I will no longer believe in fate </string>
+
+
+        <string name="gaobai_5">if not </string>
+        <string name="gaobai_6"> Is it all the way to the end </string>
+        <string name="gaobai_7">I am dreaming alone </string>
+
+
+        <string name="gaobai_8">From that day </string>
+        <string name="gaobai_9">I have met happiness</string>
+        <string name="gaobai_10">so beautiful</string>
+        <string name="gaobai_11"> So dazzling </string>
+
+
+        <string name="gaobai_12">Like </string>
+        <string name="gaobai_13">dream-like reality</string>
+        <string name="gaobai_14">This will not be just a </string>
+        <string name="gaobai_15">realistic dreams </string>
+
+
+        <string name="gaobai_16">hope </string>
+        <string name="gaobai_17">Let me beside you </string>
+        <string name="gaobai_18"> accompany you to count the autumn wind </string>
+        <string name="gaobai_19"> accompany you to the summer night to listen to the rain </string>
+        <string name="gaobai_20"> join hands to white head </string>
+
+
+        <string name="gaobai_end1">Hangzhou Blue Pine Technology</string>
+        <string name="gaobai_end2">Professional video processing development team</string>
+        <string name="gaobai_end3">Demo demo "romantic love poem" </string>
+
+    <!-- ======================================================= -->
+
+    <string name="scaleexecute_demo_hint">This demo: Video Zoom\n\n Use video hardware acceleration to do video scaling, reduce the video screen by half, and form a new video after processing.
+Applicable when the user has taken a high-definition picture and needs to zoom and then transfer.\n</string>
+         <string name="demo_id_mediainfo">Get video information</string>
+         <string name="demo_id_avsplit"> audio and video separation </string>
+         <string name="demo_id_avmerge">synthetic audio / replacement audio </string>
+         <string name="demo_id_cutaudio">audio cut </string>
+         <string name="demo_id_cutvideo">video cut </string>
+         <string name="demo_id_concatvideo">video stitching</string>
+         <string name="demo_id_audiodelaymix"> audio delay mixing </string>
+         <string name="demo_id_audiovolumemix"> audio volume control mix </string>
+
+    <!-- ========================================================================== -->
+    <string name="demo_more_avsplit"> separate the audio and video in multimedia files such as mp4, flv, etc. to form separate audio files and video files </string>
+        <string name="demo_more_avmerge">Synthetic audio / replacement audio \ n (for code clarity, easy to demonstrate, use the default audio, this code is open, you can change the test yourself) </string>
+        <string name="demo_more_cutaudio"> Demonstrate the first 20 seconds or half of the length of the intercepted audio to form a new audio file\n
+    (for clear code, easy to demonstrate, use the default audio, this code is open, you can change the test yourself) </string>
+        <string name="demo_more_cutvideo">This shows the first 20 seconds or half of the length of the captured video to form a new video file.</string>
+        <string name="demo_more_concatvideo">In order to facilitate the demonstration, you need your video for more than 20 seconds (or use the default video).\n first intercept the original video from (0 to 1/3) and (2/3 to the end) In two segments, then splicing </string>
+
+
+        <string name="filter_normal"> normal </string>
+        <string name="filter_blend">overlay</string>
+        <string name="filter_soft_light">soft overlay </string>
+        <string name="filter_stack_blur">blur</string>
+        <string name="filter_tone_curve">tone curve </string>
+        <string name="record_start"> start recording </string>
+        <string name="record_stop">stop recording </string>
+
+</resources>

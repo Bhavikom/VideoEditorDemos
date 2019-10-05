@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#009900">
+    
+   
+    <TextView 
+        android:id="@+id/id_video_editor_demo_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dip"/>
+       
+       <Button 
+        android:id="@+id/id_video_edit_btn"
+        android:layout_width="match_parent"
+        android:layout_margin="20dip"
+        android:layout_height="80dip"
+        android:text="视频测试"
+        android:layout_centerInParent="true"
+        android:background="@drawable/rect2_button_bg"/>
+        
+          
+          <Button 
+        android:id="@+id/id_video_edit_testaudio"
+        android:layout_above="@id/id_video_edit_btn"
+        android:layout_width="match_parent"
+        android:layout_margin="20dip"
+        android:layout_height="80dip"
+        android:text="音频测试"
+        android:background="@drawable/rect2_button_bg"/>
+          
+      <Button 
+        android:id="@+id/id_video_play_btn"
+        android:layout_below="@id/id_video_edit_btn"
+        android:layout_width="match_parent"
+        android:layout_margin="20dip"
+        android:layout_height="80dip"
+        android:text="结果预览"
+        android:background="@drawable/rect2_button_bg"/>
+ 
+    
+
+</RelativeLayout>

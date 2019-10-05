@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lansoeditor.demo"
+    android:targetSandboxVersion="2"
+    android:versionCode="2905"
+    android:versionName="2.9.5" >
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="27" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.autofocus" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <permission
+        android:name="android.permission.FLASHLIGHT"
+        android:permissionGroup="android.permission-group.HARDWARE_CONTROLS"
+        android:protectionLevel="normal" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@drawable/ls_logo"
+        android:label="@string/app_name"
+        android:testOnly="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name="com.example.commonDemo.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.commonDemo.VideoLayoutDemoActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity android:name="com.example.commonDemo.noFree.VideoCompressActivity" />
+        <activity android:name="com.example.commonDemo.noFree.ExtractFrameDemoActivity" />
+        <activity android:name="com.example.commonDemo.noFree.DisplayFramesActivity" />
+        <activity android:name="com.example.commonDemo.noFree.ListNoFreeActivity" />
+        <activity android:name="com.example.commonDemo.VideoPlayerActivity" />
+        <activity android:name="com.example.commonDemo.FileExplorerActivity" />
+        <activity android:name="com.example.commonDemo.MediaInfoActivity" />
+        <activity android:name="com.example.commonDemo.CustomFunctionActivity" />
+        <activity android:name="com.example.commonDemo.AVEditorDemoActivity" />
+
+        <!-- 专业版演示 -->
+        <activity android:name="com.example.commonDemo.advanceSuggest.ListAdvanceDemoActivity" >
+        </activity>
+        <activity android:name="com.example.commonDemo.advanceSuggest.AERecordFileHintActivity" />
+        <activity
+            android:name="com.example.commonDemo.advanceSuggest.PlayAdvanceDemoActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+    </application>
+
+</manifest>

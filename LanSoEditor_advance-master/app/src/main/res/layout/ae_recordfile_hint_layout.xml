@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_40"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:text="This feature is temporarily not open to the public. You can contact us to request relevant documents."
+        android:textColor="@color/red"
+        android:layout_margin="@dimen/dp5"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:text="scenes to be used:"
+            android:textColor="@color/red"
+            android:layout_margin="@dimen/dp5"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="@color/white_40"/>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_margin="5dp"
+            android:textSize="15sp"
+            android:text="Cool, tall, specific scene video; \n common are: fun push, small persimmon, tease, etc.." />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:text="Professional customer:"
+            android:textColor="@color/red"
+            android:layout_margin="@dimen/dp5"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="@color/white_40"/>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_margin="5dp"
+            android:textSize="15sp"
+            android:text="If necessary, please contact us.\nWe will send you the SDK package that supports AE template." />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:text="Intent:"
+            android:textColor="@color/red"
+            android:layout_margin="@dimen/dp5"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="@color/white_40"/>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_margin="5dp"
+            android:textSize="15sp"
+            android:text="If necessary, please contact us.\n We will send you the relevant test file.." />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/id_ae_recordfile_startbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_btn_bg"
+        android:layout_margin="@dimen/dp20"
+        android:text="Start previewing the recorded video"/>
+
+
+</LinearLayout>
